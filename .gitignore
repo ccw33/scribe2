@@ -9,6 +9,7 @@ my_demo/geckodriver.log
 .idea
 
 log
+
 venv
 >>>>>>> gitignore
 
