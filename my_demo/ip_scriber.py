@@ -59,6 +59,7 @@ def get_random_ip_proxy(ip_list):
 
 
 
+
 queueLock = threading.Lock()
 
 exitFlag = False
@@ -130,7 +131,7 @@ def scribe_ip_with_soup(soup, selector, filter=None, ip_list=[], fanqiang_ip_lis
             else:
                 logger.warning('无法根据selector找到ip和port：' + str(selector))
         except AttributeError as e:
-            logger.debug(e)
+            logger.warning(e)
             continue
         except Exception as e:
             logger.warning(traceback.format_exc())
@@ -222,7 +223,7 @@ def scribe_ip_in_webdriver(url, selector, proxies_ip_list, ok_tag,next_paginatio
             break
         except Exception as e:
             driver.quit()
-            logger.debug(e)
+            logger.warning(e)
 
     times = 0
     ip_list, fanqiang_ip_list = [], []
