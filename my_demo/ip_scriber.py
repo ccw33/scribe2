@@ -407,7 +407,7 @@ def write_ip_list():
     old_ip_fanqiang_list.extend(ip_fanqiang_list)
     ip_fanqiang_list = list(set([HashableDict(ip) for ip in old_ip_fanqiang_list]))  # 去重
 
-    # 如果数量过多（多于50）把不能翻墙的去掉
+    # 如果数量过多（多于100）把不能翻墙的去掉
     useful_fanqiang_list = []
     if len(ip_fanqiang_list)>100:
         threads = []

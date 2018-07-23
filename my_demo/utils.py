@@ -22,7 +22,7 @@ import pickle
 import math
 
 system = 'windows'
-driver_type = 'firefox'
+driver_type = 'chrome'
 mode = 'product'  # mode: 如果为‘debug’显示浏览器，如果为‘product’则不像是浏览器
 
 headers = {
@@ -37,7 +37,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(level=logging.DEBUG)
 # 定义一个RotatingFileHandler，最多备份3个日志文件，每个日志文件最大1K
 # rHandler = RotatingFileHandler("log/weibo", maxBytes=1 * 1024, backupCount=3,encoding='utf-8')
-rHandler = logging.FileHandler("../log/weibo" if system == 'linux' else "F:/scribe/log/weibo", encoding='utf-8')
+rHandler = logging.FileHandler("../log/weibo" if system == 'linux' else "F:/scribe2/log/weibo", encoding='utf-8')
 rHandler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 rHandler.setFormatter(formatter)
@@ -229,7 +229,7 @@ def get_location(ip):
     :return:
     '''
     import geoip2.database
-    reader = geoip2.database.Reader('../file/GeoLite2-City_20180501/GeoLite2-City.mmdb')
+    reader = geoip2.database.Reader('file/GeoLite2-City_20180501/GeoLite2-City.mmdb')
     ip = ip
     response = reader.city(ip)
     # # 有多种语言，我们这里主要输出英文和中文
@@ -300,8 +300,8 @@ def print_action_name(prefix='', debug=False):
 
 def ready(proxy_ip_port=None):
     '''
-
-    :param proxy_ip_port:
+    根据 proxy_ip_port（dict）获取driver（设置好代理）
+    :param proxy_ip_port: ex:{'proxy_type': 'socks5', 'ip_with_port': '91.206.30.205:3129', 'time': 0.072113, 'location': {'region': '地区：Europa(欧洲)', 'country': '国家：Ukraine(乌克兰) ，简称:UA', 'province': '洲／省：Kyiv City', 'city': '城市：Kiev', 'rect': '经度：30.5167，纬度50.4333', 'timezone': '时区：Europe/Kiev', 'postcode': '邮编:01016'}}
     :return:
     '''
     if system == 'windows':
