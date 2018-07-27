@@ -100,7 +100,7 @@ End Function
 Set ws = createObject("WScript.shell")
 ws.Run "D:\GatherProxy\GatherProxy.exe"
  
-Call click_when_nearbycolor_long_delay(929,326,"178CFF",60) // 출롤
+Call click_when_nearbycolor_long_delay(929,326,"178CFF",600) // 출롤
 Call click_when_nearbycolor(393, 297, "FEF2DA",1)	// Socks only
 Call click_when_nearbycolor(277, 342, "FDE2B7",1)// Start checker after gathering complete
 Call click_when_nearbycolor(466, 232, "FFFFFF",1)// Proxy Filter
