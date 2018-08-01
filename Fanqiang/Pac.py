@@ -35,6 +35,7 @@ file_path_chrome_socks = 'E:/git-repository/blog/ccw33.github.io/file/OmegaProfi
 is_ok_at_least_one = False
 
 
+
 def generate_replace_text(ip_fanqiang_list):
     new_proxy_list = ["%s%s = %s,%s\n" % (
     ip['proxy_type'], str(index), ip['proxy_type'] if ip['proxy_type'] == 'http' else 'socks5',
@@ -53,7 +54,7 @@ def update_surge_pac():
     if not ip_fanqiang_list:
         return
     else:
-        ip_fanqiang_list = ip_fanqiang_list[: 5]
+        ip_fanqiang_list = ip_fanqiang_list[:5]
 
     # 读取文件
     old_text = ''
@@ -117,6 +118,7 @@ def update_chrome_pac_by_gatherproxy():
             fr.close()
 
     q = queue.Queue()
+    ip_port_list = list(set(ip_port_list)) # 去重
     for ip_with_port in ip_port_list:
         ip_dict = {
             'ip_with_port': ip_with_port,
@@ -403,7 +405,7 @@ def test():
         t.start()
     q.join()
 
-    ip_fanqiang_list = sorted(ip_fanqiang_list, key=lambda ip: ip['time'])
+    # ip_fanqiang_list = sorted(ip_fanqiang_list, key=lambda ip: ip['time'])
 
     # 更新数据库
     ipsFanqiangData.update_one({'_id': old_data['_id']}, {'$set': {
@@ -416,14 +418,13 @@ def test():
 
 if __name__ == "__main__":
     # while True:
+    #     update_surge_pac()
     #     update_chrome_pac()
     #     update_chrome_pac_by_gatherproxy()
-    #     time.sleep(1)
-    while True:
-        update_surge_pac()
-        update_chrome_pac()
-        update_chrome_pac_by_gatherproxy()
-        logger.debug('DONE!!!')
-        time.sleep(3600*6)
+    #     logger.debug('DONE!!!')
+    #     time.sleep(3600*6)
 
-    # test()
+    update_surge_pac()
+    update_chrome_pac()
+    update_chrome_pac_by_gatherproxy()
+    logger.debug('DONE!!!')
