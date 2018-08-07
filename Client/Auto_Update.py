@@ -66,7 +66,7 @@ if __name__ == "__main__":
     while True:
         if not auto_updater.test_ok():
             auto_updater.update()
-        time.sleep(1)
+        time.sleep(3600)
 
     # payload = {'uuid': uuid.uuid1()}
     # resp = requests.get(Conf.server + 'get_new_ip_port', params=payload)
