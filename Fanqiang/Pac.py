@@ -150,6 +150,9 @@ def get_useful_fanqiang_ip_mongo(q):
                                              'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                                 timeout=10)
 
+            if re.findall(r'robots', resp.text):
+                raise scribe_utils.RobotException()
+
             if not google_machine_test:
                 logger.debug(ip_with_port + "可用")
                 modify_chrome_pac_file_and_push(ip_with_port)
@@ -171,8 +174,8 @@ def get_useful_fanqiang_ip_mongo(q):
                     logger.debug(ip_with_port + "可用")
                     modify_chrome_pac_file_and_push(ip_with_port)
 
-        except exceptions.TimeoutException as e:  # 浏览器访问超时
-            driver.quit()
+        except (scribe_utils.RobotException,\
+               requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e:
             try:
                 lock.acquire()
                 Fanqiang.delete({'ip_with_port': ip_with_port})
@@ -181,7 +184,8 @@ def get_useful_fanqiang_ip_mongo(q):
             finally:
                 lock.release()
             continue
-        except requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout or requests.exceptions.SSLError as e:  # request 访问错误
+        except exceptions.TimeoutException as e:  # 浏览器访问超时
+            driver.quit()
             try:
                 lock.acquire()
                 Fanqiang.delete({'ip_with_port': ip_with_port})
@@ -223,6 +227,9 @@ def get_useful_fanqiang_ip_gatherproxy(q):
                                          'https': proxy_type + (
                                              'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                                 timeout=10)
+            if re.findall(r'robots', resp.text):
+                raise scribe_utils.RobotException()
+
             use_time = resp.elapsed.microseconds / math.pow(10, 6)
             if not google_machine_test:
                 logger.debug(ip_with_port + "可用")
@@ -262,10 +269,25 @@ def get_useful_fanqiang_ip_gatherproxy(q):
                     finally:
                         lock.release()
                     modify_chrome_pac_file_and_push(ip_with_port)
+        except (requests.exceptions.ConnectionError, requests.ReadTimeout\
+               , requests.exceptions.SSLError, scribe_utils.RobotException) as e:
+            try:
+                lock.acquire()
+                Fanqiang.delete({'ip_with_port': ip_with_port})
+            except Exception as e:
+                logger.info(e)
+            finally:
+                lock.release()
+            continue
         except exceptions.TimeoutException as e:  # 浏览器访问超时
             driver.quit()
-            continue
-        except requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout or requests.exceptions.SSLError as e:  # request 访问错误
+            try:
+                lock.acquire()
+                Fanqiang.delete({'ip_with_port': ip_with_port})
+            except Exception as e:
+                logger.info(e)
+            finally:
+                lock.release()
             continue
         except Exception as e:
             if driver:
@@ -426,9 +448,9 @@ if __name__ == "__main__":
     #     logger.debug('DONE!!!')
     #     time.sleep(3600*6)
 
-    update_surge_pac()
     update_chrome_pac()
     update_chrome_pac_by_gatherproxy()
+    update_surge_pac()
     logger.debug('DONE!!!')
 
     # ip_fanqiang_list = list(Fanqiang.query())

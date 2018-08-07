@@ -37,6 +37,14 @@ logger = Log('log/scribe_utils').logger
 client = pymongo.MongoClient('localhost', 27017)
 
 
+class RobotException(Exception):
+    '''
+    需要机器人验证时抛出这个错
+    '''
+    def __init__(self, *args,message='需要机器人验证', **kwargs):
+        super(RobotException,self).__init__(*args, **kwargs)
+        self.message = message
+
 class HashableDict(dict):
     def __eq__(self, other):
         return self['ip_with_port']==other['ip_with_port']

@@ -170,3 +170,1203 @@ Traceback (most recent call last):
     with open(database, 'rb') as db_file:
 FileNotFoundError: [Errno 2] No such file or directory: 'file/GeoLite2-City_20180501/GeoLite2-City.mmdb'
 
+2018-08-07 14:56:33,594 - Utils.log_utils - ERROR - f8891082-9a0e-11e8-96b7-005056c00008 - Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 832, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 132.148.129.183:47617: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072162E8>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072162E8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072162E8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 103.216.82.148:6667: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299630>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299630>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299630>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 28, in get_lans_data
+    ip_with_port=fanqiang_ip_service.get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 19, in get_random_ip_port_dict
+    ip_port_dict = ip_list[math.floor(random.random() * len(ip_list))]
+IndexError: list index out of range
+
+2018-08-07 14:56:38,005 - Utils.log_utils - ERROR - c3671322-9a0e-11e8-a41f-005056c00008 - Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 832, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.180.124:1342: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006AACA90>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006AACA90>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006AACA90>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 132.148.129.183:1628: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006B22828>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006B22828>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006B22828>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 195.25.25.132:58920: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D80320>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D80320>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D80320>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 109.200.132.144:8888: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006DC8C50>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006DC8C50>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006DC8C50>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 185.87.49.185:46918: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E15438>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E15438>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E15438>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.189.215:7432: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E5CA58>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E5CA58>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006E5CA58>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.182.200:24408: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000070DCB38>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000070DCB38>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000070DCB38>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 94.177.216.219:8888: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000000000715B198>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000000000715B198>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x000000000715B198>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 855, in connect
+    raise GeneralProxyError("Socket error", error)
+socks.GeneralProxyError: Socket error: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007183E80>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007183E80>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007183E80>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.188.105:7432: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007216FD0>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007216FD0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007216FD0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 103.216.82.148:6667: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299F60>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299F60>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007299F60>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 28, in get_lans_data
+    ip_with_port=fanqiang_ip_service.get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  [Previous line repeated 7 more times]
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 19, in get_random_ip_port_dict
+    ip_port_dict = ip_list[math.floor(random.random() * len(ip_list))]
+IndexError: list index out of range
+
+2018-08-07 14:56:42,094 - Utils.log_utils - ERROR - e5bce674-9a0e-11e8-b843-005056c00008 - Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 832, in connect
+    super(socksocket, self).connect(proxy_addr)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.182.200:24408: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006EA96D8>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006EA96D8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006EA96D8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 95.110.227.5:57201: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007118E48>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007118E48>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007118E48>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 146.252.241.90:56037: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D800B8>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D800B8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000006D800B8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.217.40:35968: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000071CCEF0>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000071CCEF0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000071CCEF0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 192.169.188.105:7432: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007258AC8>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007258AC8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x0000000007258AC8>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 88, in _new_conn
+    **extra_kw
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 262, in create_connection
+    raise err
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 252, in create_connection
+    sock.connect((remote_host, remote_port))
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 100, in wrapper
+    return function(*args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\socks.py", line 844, in connect
+    raise ProxyConnectionError(msg, error)
+socks.ProxyConnectionError: Error connecting to SOCKS5 proxy 103.216.82.148:6667: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 346, in _make_request
+    self._validate_conn(conn)
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 850, in _validate_conn
+    conn.connect()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connection.py", line 284, in connect
+    conn = self._new_conn()
+  File "F:\scribe2\venv\lib\site-packages\urllib3\contrib\socks.py", line 105, in _new_conn
+    (self.host, self.timeout)
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072EE8D0>, 'Connection to www.baidu.com timed out. (connect timeout=10)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 440, in send
+    timeout=timeout
+  File "F:\scribe2\venv\lib\site-packages\urllib3\connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "F:\scribe2\venv\lib\site-packages\urllib3\util\retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072EE8D0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 21, in get_random_ip_port_dict
+    test_proxy(ip_port_dict)
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 42, in test_proxy
+    timeout=10)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\requests\adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: SOCKSHTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x00000000072EE8D0>, 'Connection to www.baidu.com timed out. (connect timeout=10)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 28, in get_lans_data
+    ip_with_port=fanqiang_ip_service.get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 25, in get_random_ip_port_dict
+    return get_random_ip_port_dict()
+  [Previous line repeated 2 more times]
+  File "F:\scribe2\Server\Service\fanqiang_ip_service.py", line 19, in get_random_ip_port_dict
+    ip_port_dict = ip_list[math.floor(random.random() * len(ip_list))]
+IndexError: list index out of range
+

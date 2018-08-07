@@ -23,8 +23,12 @@ def hello_world():
 @app.route('/get_new_ip_port',methods=['GET'])
 def get_lans_data():
     request_id = request.args['uuid']
-    # 获取能用的ip_with_port，
     try:
+        # todo 首先测试原来的ip能不能用（防止而已更新）
+        # 获取当前用户使用的ip
+        # 测试，如果不能用就换
+
+        # 获取能用的ip_with_port，
         ip_with_port=fanqiang_ip_service.get_random_ip_port_dict()
     except Exception as e:
         logger.error("%s - %s" % (request_id,traceback.format_exc()))

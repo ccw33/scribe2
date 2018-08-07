@@ -49,6 +49,8 @@ class AutoUpdater():
     def update(self):
         payload = {'uuid': uuid.uuid1()}
         resp = requests.get(Conf.server + 'get_new_ip_port', params=payload)
+        if not resp.status_code==200:
+            raise Exception(resp.content.decode('urf-8'))
         ip_port = resp.content.decode('utf-8')
         # 更新本地的配置文件
         new_text = ''
