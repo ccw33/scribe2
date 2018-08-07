@@ -31,7 +31,7 @@ headers = {
 lock = threading.Lock()
 lock2 = threading.Lock()
 
-logger = Log('log/weibo').logger
+logger = Log('log/scribe_utils').logger
 
 # 初始化数据库
 client = pymongo.MongoClient('localhost', 27017)

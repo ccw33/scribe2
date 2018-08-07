@@ -3,7 +3,7 @@
 from model.fangqiang import ip
 
 import traceback
-
+import random
 import math
 import pymongo
 import re
@@ -35,11 +35,10 @@ file_path_chrome_socks = 'E:/git-repository/blog/ccw33.github.io/file/OmegaProfi
 is_ok_at_least_one = False
 
 
-
 def generate_replace_text(ip_fanqiang_list):
     new_proxy_list = ["%s%s = %s,%s\n" % (
-    ip['proxy_type'], str(index), ip['proxy_type'] if ip['proxy_type'] == 'http' else 'socks5',
-    ip['ip_with_port'].replace(':', ',')) for index, ip in enumerate(ip_fanqiang_list)]
+        ip['proxy_type'], str(index), ip['proxy_type'] if ip['proxy_type'] == 'http' else 'socks5',
+        ip['ip_with_port'].replace(':', ',')) for index, ip in enumerate(ip_fanqiang_list)]
     new_proxy_group = [s.split('=')[0] for s in new_proxy_list]
     return (reduce(lambda v1, v2: v1 + v2, new_proxy_list), reduce(lambda v1, v2: v1 + ',' + v2, new_proxy_group) + ',')
 
@@ -51,10 +50,11 @@ def update_surge_pac():
     :return:
     '''
     ip_fanqiang_list = list(Fanqiang.query())
-    if not ip_fanqiang_list:
-        return
+    if len(ip_fanqiang_list) < 7:
+        pass
     else:
-        ip_fanqiang_list = ip_fanqiang_list[:5]
+        start = math.floor(random.random() * len(ip_fanqiang_list))
+        ip_fanqiang_list = ip_fanqiang_list[start:start + 5]
 
     # 读取文件
     old_text = ''
@@ -66,8 +66,9 @@ def update_surge_pac():
             new_text = old_text.replace(re.findall(r'\[Proxy\]\n((?:.+\n)+)Socks1',
                                                    old_text)[0], proxy_replace_text)
             new_text = new_text.replace(
-                re.findall(r'\[Proxy Group\]\nProxy = url-test, (.+) url = http://www.google.com/generate_204\nSocks_Proxy',
-                           new_text)[0], group_replace_text)
+                re.findall(
+                    r'\[Proxy Group\]\nProxy = url-test, (.+) url = http://www.google.com/generate_204\nSocks_Proxy',
+                    new_text)[0], group_replace_text)
         finally:
             fr.close()
 
@@ -80,8 +81,6 @@ def update_surge_pac():
     Git.git_push(file_path)
 
 
-
-
 def update_chrome_pac():
     '''
     检查mongodb里面的ip——port,调用update_chrome_pac_by_gatherproxy(),更新到数据库,并更新chrome用的pac
@@ -89,10 +88,12 @@ def update_chrome_pac():
     '''
 
     ip_fanqiang_list = list(Fanqiang.query())
+    if len(ip_fanqiang_list) < 7:
+        pass
+    else:
+        start = math.floor(random.random() * len(ip_fanqiang_list))
+        ip_fanqiang_list = ip_fanqiang_list[start:]
 
-    # 把需要验证的去掉
-    proxy_type = 'socks5'
-    ok_list = []
     q = queue.Queue()
     for ip_dict in ip_fanqiang_list:
         q.put(ip_dict)
@@ -118,11 +119,11 @@ def update_chrome_pac_by_gatherproxy():
             fr.close()
 
     q = queue.Queue()
-    ip_port_list = list(set(ip_port_list)) # 去重
+    ip_port_list = list(set(ip_port_list))  # 去重
     for ip_with_port in ip_port_list:
         ip_dict = {
             'ip_with_port': ip_with_port,
-            'proxy_type': 'socks5'
+            'proxy_type': 'socks5',
         }
         q.put(ip_dict)
     for i in range(20) if not google_machine_test else range(5):
@@ -142,7 +143,7 @@ def get_useful_fanqiang_ip_mongo(q):
             proxy_type = ip_dict['proxy_type']
             ip_with_port = ip_dict['ip_with_port']
             logger.debug("开始测试" + ip_with_port)
-            resp = requests.get('http://www.baidu.com/', headers=scribe_utils.headers,
+            resp = requests.get('https://www.baidu.com/', headers=scribe_utils.headers,
                                 proxies={'http': proxy_type + (
                                     'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,
                                          'https': proxy_type + (
@@ -180,7 +181,7 @@ def get_useful_fanqiang_ip_mongo(q):
             finally:
                 lock.release()
             continue
-        except requests.ConnectionError or requests.ReadTimeout as e:
+        except requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout or requests.exceptions.SSLError as e:  # request 访问错误
             try:
                 lock.acquire()
                 Fanqiang.delete({'ip_with_port': ip_with_port})
@@ -201,7 +202,7 @@ def get_useful_fanqiang_ip_mongo(q):
                 driver.quit()
             if re.findall(r'NoneType', str(e)):
                 continue
-            if not isinstance(e,ValueError):
+            if not isinstance(e, ValueError):
                 logger.warning(traceback.format_exc())
             continue
         finally:
@@ -216,7 +217,7 @@ def get_useful_fanqiang_ip_gatherproxy(q):
             proxy_type = ip_dict['proxy_type']
             ip_with_port = ip_dict['ip_with_port']
             logger.debug("开始测试" + ip_with_port)
-            resp = requests.get('http://www.baidu.com/', headers=scribe_utils.headers,
+            resp = requests.get('https://www.baidu.com/', headers=scribe_utils.headers,
                                 proxies={'http': proxy_type + (
                                     'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,
                                          'https': proxy_type + (
@@ -264,14 +265,14 @@ def get_useful_fanqiang_ip_gatherproxy(q):
         except exceptions.TimeoutException as e:  # 浏览器访问超时
             driver.quit()
             continue
-        except requests.ConnectionError or requests.ReadTimeout as e:  # request 访问错误
+        except requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout or requests.exceptions.SSLError as e:  # request 访问错误
             continue
         except Exception as e:
             if driver:
                 driver.quit()
             if re.findall(r'NoneType', str(e)):
                 continue
-            if not isinstance(e,ValueError):
+            if not isinstance(e, ValueError):
                 logger.warning(traceback.format_exc())
             continue
         finally:
@@ -302,6 +303,7 @@ def modify_chrome_pac_file_and_push(ip_with_port):
         logger.error(traceback.format_exc())
     finally:
         io_lock.release()
+
 
 def modify_chrome_file(file_path, ip_with_port):
     # 替换ip和port
@@ -428,3 +430,6 @@ if __name__ == "__main__":
     update_chrome_pac()
     update_chrome_pac_by_gatherproxy()
     logger.debug('DONE!!!')
+
+    # ip_fanqiang_list = list(Fanqiang.query())
+    # ip_fanqiang_list = [ip_port_dict['ip_with_port'] for ip_port_dict in ip_fanqiang_list if ip_port_dict['ip_with_port'].split(':')[1]]

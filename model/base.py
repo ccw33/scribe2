@@ -92,6 +92,7 @@ class Base():
         '''
         删除一条数据
         :param filter: 如{'_id': ’1‘}
+        :type filter: dict
         :return:
         '''
         if support_transication:
