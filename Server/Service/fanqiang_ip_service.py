@@ -6,10 +6,11 @@ import re
 
 import requests
 
-from model.fangqiang import ip
+from model.fangqiang import ip,user as user_model
 from Utils import scribe_utils
 
 fanqiang = ip.Fanqiang()
+user = user_model.User()
 
 def get_random_ip_port_dict():
     '''
@@ -44,7 +45,18 @@ def test_proxy(ip_port_dict):
                                  'https': proxy_type + (
                                      'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                         timeout=10)
-    if re.findall(r'robots', resp.text):
-        raise scribe_utils.RobotException()
     use_time = resp.elapsed.microseconds / math.pow(10, 6)
     return use_time
+
+def delete_and_update_ip_port(ip_with_port):
+    '''
+    删除ip_port_dict 同时级联更新使用该ip_port的用户的ip_with_port字段
+    :param ip_with_port:
+    :type ip_with_port:str
+    :return:
+    '''
+    fanqiang.delete({'ip_with_port':ip_with_port})
+    new_ip_with_port = get_random_ip_port_dict()['ip_with_port']
+    user.update({'ip_with_port_1':new_ip_with_port},{'ip_with_port_1':ip_with_port})
+    user.update({'ip_with_port_2':new_ip_with_port},{'ip_with_port_2':ip_with_port})
+    return new_ip_with_port

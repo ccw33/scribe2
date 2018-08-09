@@ -1,0 +1,6 @@
+proxy_filt_path=D:/Privoxy/config.txt
+proxy1=
+proxy2=
+
+account=ccw
+password=123qwe

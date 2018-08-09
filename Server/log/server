@@ -1370,3 +1370,17 @@ Traceback (most recent call last):
     ip_port_dict = ip_list[math.floor(random.random() * len(ip_list))]
 IndexError: list index out of range
 
+2018-08-09 10:41:02,731 - Utils.log_utils - ERROR - a7672c34-9b7d-11e8-9073-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 36, in get_new_ip_port
+    ip_with_port_1,ip_with_port_2 = user_service.update_and_get_using_ip_port(account)
+  File "F:\scribe2\Server\Service\user_service.py", line 30, in update_and_get_using_ip_port
+    ip_port_1 , ip_port_2 = ''
+ValueError: not enough values to unpack (expected 2, got 0)
+
+2018-08-09 10:41:02,731 - Utils.log_utils - ERROR - a7672c34-9b7d-11e8-9073-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 36, in get_new_ip_port
+    ip_with_port_1,ip_with_port_2 = user_service.update_and_get_using_ip_port(account)
+  File "F:\scribe2\Server\Service\user_service.py", line 30, in update_and_get_using_ip_port
+    ip_port_1 , ip_port_2 = ''
+ValueError: not enough values to unpack (expected 2, got 0)
+

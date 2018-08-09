@@ -1,6 +1,8 @@
 # encoding:utf-8
 import pymongo
 import time
+import datetime
+
 
 client = pymongo.MongoClient('localhost', 27017)
 
@@ -61,12 +63,12 @@ class Base():
         if support_transication:
             with client.start_session() as session:
                 with session.start_transaction():
-                    data['updated_at'] = time.strftime('%Y-%m-%d')
-                    data['created_at'] = time.strftime('%Y-%m-%d')
+                    data['updated_at'] = datetime.datetime.now()
+                    data['created_at'] = datetime.datetime.now()
                     self.collection.insert_one(data, session=session)
         else:
-            data['updated_at'] = time.strftime('%Y-%m-%d')
-            data['created_at'] = time.strftime('%Y-%m-%d')
+            data['updated_at'] = datetime.datetime.now()
+            data['created_at'] = datetime.datetime.now()
             self.collection.insert_one(data)
 
     def save_multiple(self, data_list):
@@ -80,12 +82,12 @@ class Base():
                 with session.start_transaction():
                     for data in data_list:
                         self.validate_data(data)
-                        data['updated_at'] = time.strftime('%Y-%m-%d')
+                        data['updated_at'] = datetime.datetime.now()
                     self.collection.insert_many(data_list, session=session)
         else:
             for data in data_list:
                 self.validate_data(data)
-                data['updated_at'] = time.strftime('%Y-%m-%d')
+                data['updated_at'] = datetime.datetime.now()
             self.collection.insert_many(data_list)
 
     def delete(self, filter):
@@ -114,11 +116,11 @@ class Base():
         if support_transication:
             with client.start_session() as session:
                 with session.start_transaction():
-                    data['updated_at'] = time.strftime('%Y-%m-%d')
+                    data['updated_at'] = datetime.datetime.now()
                     self.collection.update_one(filter if filter else {'_id': data['_id']}, {'$set': data},
                                                upsert=upsert, session=session)
         else:
-            data['updated_at'] = time.strftime('%Y-%m-%d')
+            data['updated_at'] = datetime.datetime.now()
             self.collection.update_one(filter if filter else {'_id': data['_id']}, {'$set': data}, upsert=upsert)
 
     def query(self, filter={}):

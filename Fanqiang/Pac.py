@@ -143,15 +143,15 @@ def get_useful_fanqiang_ip_mongo(q):
             proxy_type = ip_dict['proxy_type']
             ip_with_port = ip_dict['ip_with_port']
             logger.debug("开始测试" + ip_with_port)
-            resp = requests.get('https://www.baidu.com/', headers=scribe_utils.headers,
+            resp = requests.get('https://www.google.com/', headers=scribe_utils.headers,
                                 proxies={'http': proxy_type + (
                                     'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,
                                          'https': proxy_type + (
                                              'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                                 timeout=10)
 
-            if re.findall(r'robots', resp.text):
-                raise scribe_utils.RobotException()
+            # if not re.findall(r'input value=\"Google',resp.text):
+            #     raise scribe_utils.RobotException()
 
             if not google_machine_test:
                 logger.debug(ip_with_port + "可用")
@@ -221,14 +221,14 @@ def get_useful_fanqiang_ip_gatherproxy(q):
             proxy_type = ip_dict['proxy_type']
             ip_with_port = ip_dict['ip_with_port']
             logger.debug("开始测试" + ip_with_port)
-            resp = requests.get('https://www.baidu.com/', headers=scribe_utils.headers,
+            resp = requests.get('https://www.google.com/', headers=scribe_utils.headers,
                                 proxies={'http': proxy_type + (
                                     'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,
                                          'https': proxy_type + (
                                              'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                                 timeout=10)
-            if re.findall(r'robots', resp.text):
-                raise scribe_utils.RobotException()
+            # if not re.findall(r'input value=\"Google',resp.text):
+            #     raise scribe_utils.RobotException()
 
             use_time = resp.elapsed.microseconds / math.pow(10, 6)
             if not google_machine_test:
@@ -347,6 +347,7 @@ def modify_chrome_file(file_path, ip_with_port):
             fw.write(new_text)
         finally:
             fw.close()
+    logger.debug("已更新文件 %s,ip_port为：%s" % (file_path,ip_with_port))
 
 
 def merge_proxy():
@@ -395,7 +396,7 @@ def test():
         while not queue.empty():
             try:
                 ip_port = queue.get(timeout=1)
-                resp = requests.get('http://www.google.com/' if fanqiang else 'http://www.baidu.com',
+                resp = requests.get('https://www.google.com/' if fanqiang else 'https://www.baidu.com',
                                     headers=scribe_utils.headers,
                                     proxies={'http': type + (
                                         'h' if type == 'socks5' else '') + '://' + ip_port,

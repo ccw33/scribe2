@@ -19,3 +19,8 @@
     raise InvalidSchema("Missing dependencies for SOCKS support.")
 requests.exceptions.InvalidSchema: Missing dependencies for SOCKS support.
 
+2018-08-09 11:56:15,493 - Utils.log_utils - WARNING - Traceback (most recent call last):
+  File "F:/scribe2/Client/Auto_Update.py", line 64, in test_ok
+    with open(self.proxy_filt_path,'r+') as frw:
+OSError: [Errno 22] Invalid argument: 'D:/Privoxy/config.txt\n'
+
