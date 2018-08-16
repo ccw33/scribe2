@@ -305,7 +305,8 @@ def ready(proxy_ip_port=None):
 
     if driver_type == 'firefox':  # 如果用火狐
         fireFoxOptions = webdriver.FirefoxOptions()
-        fireFoxOptions.set_headless()
+        if not mode == 'debug':
+            fireFoxOptions.headless=True
         if proxy_ip_port:
             profile = webdriver.FirefoxProfile()
             profile.set_preference("network.proxy.type", 1)
@@ -361,7 +362,7 @@ def ready(proxy_ip_port=None):
     else:  # 不是火狐就是chrome
         chrome_options = webdriver.ChromeOptions()
         if not mode == 'debug':
-            chrome_options.set_headless()
+            chrome_options.headless=True
         if proxy_ip_port:
             chrome_options.add_argument(
                 '--proxy-server=%s://%s' % (proxy_ip_port['proxy_type'], proxy_ip_port['ip_with_port']))

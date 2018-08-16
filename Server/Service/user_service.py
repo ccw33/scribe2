@@ -30,13 +30,15 @@ def vertify_user(account,password):
     '''
     try:
         user = user_collection.query({'account':account}).next()
+        if user['is_freeze']:
+            return False, '账号目前处于冻结状态'
         if not user['password']==password:
             return False,'密码不正确'
     except StopIteration as e:
         return False,'不存在此账号'
-    except Exception:
+    except Exception as e:
         logger.info(traceback.format_exc())
-        return False
+        return False,str(e)
     return True,'ok'
 
 def update_and_get_using_ip_port(account):
