@@ -1,13 +1,16 @@
 #encoding:utf-8
-
+import logging
 import math
 import random
 import re
 
 import requests
 
+from Server.server import app
 from model.fangqiang import ip,user as user_model
-from Utils import scribe_utils
+from Utils import scribe_utils, log_utils
+
+logger = log_utils.Log('Server/log/server',logging.DEBUG if app.debug else logging.ERROR,__name__).logger
 
 fanqiang = ip.Fanqiang()
 user = user_model.User()
@@ -24,9 +27,10 @@ def get_random_ip_port_dict():
     try:
         test_proxy(ip_port_dict)
         return ip_port_dict
-    except scribe_utils.RobotException or\
-           requests.exceptions.ConnectionError or requests.exceptions.ReadTimeout or requests.exceptions.SSLError as e:  # request 访问错误
+    except (scribe_utils.RobotException,\
+           requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e: # request 访问错误
         fanqiang.delete({'ip_with_port':ip_port_dict['ip_with_port']})
+        logger.debug('%s 失败' % ip_port_dict['ip_with_port'])
         return get_random_ip_port_dict()
 
 
@@ -39,6 +43,7 @@ def test_proxy(ip_port_dict):
     '''
     ip_with_port = ip_port_dict['ip_with_port']
     proxy_type = ip_port_dict['proxy_type']
+    logger.debug('开始测试%s' % ip_with_port)
     resp = requests.get('https://www.baidu.com/', headers=scribe_utils.headers,
                         proxies={'http': proxy_type + (
                             'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,

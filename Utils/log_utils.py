@@ -12,8 +12,8 @@ class Log():
 
     '''
 
-    def __init__(self, file_path, level=logging.ERROR):
-        logger = logging.getLogger(__name__)
+    def __init__(self, file_path, level=logging.ERROR,name=__name__):
+        logger = logging.getLogger(name)
         logger.setLevel(level=level)
         # 定义一个RotatingFileHandler，最多备份3个日志文件，每个日志文件最大1K
         rHandler = RotatingFileHandler(file_path, maxBytes=1 * 1024 * 1024, backupCount=3, encoding='utf-8')

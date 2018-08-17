@@ -1,5 +1,5 @@
 proxy_filt_path=D:/Privoxy/config.txt
-proxy1=
+proxy1=123.206.56.247:1080
 proxy2=
 
 account=ccw

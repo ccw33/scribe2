@@ -24,3 +24,17 @@ requests.exceptions.InvalidSchema: Missing dependencies for SOCKS support.
     with open(self.proxy_filt_path,'r+') as frw:
 OSError: [Errno 22] Invalid argument: 'D:/Privoxy/config.txt\n'
 
+2018-08-17 17:31:42,077 - __main__ - ERROR - Traceback (most recent call last):
+  File "F:/scribe2/Client/app.py", line 21, in <module>
+    ip_port_list = au.get_useful_ip_port_from_server(reason)
+  File "F:/scribe2/Client\Service\ProxyService.py", line 118, in get_useful_ip_port_from_server
+    raise exception_utils.ServerErtrorException(resp.content.decode('utf-8'))
+Utils.exception_utils.ServerErtrorException: 服务器出错，请联系管理员，请求id是：58e96e6c-a200-11e8-b5e4-005056c00008
+
+2018-08-17 17:35:39,523 - __main__ - ERROR - Traceback (most recent call last):
+  File "F:/scribe2/Client/app.py", line 21, in <module>
+    ip_port_list = au.get_useful_ip_port_from_server(reason)
+  File "F:/scribe2/Client\Service\ProxyService.py", line 118, in get_useful_ip_port_from_server
+    raise exception_utils.ServerErtrorException(resp.content.decode('utf-8'))
+Utils.exception_utils.ServerErtrorException: 服务器出错，请联系管理员，请求id是：b20d8f8a-a200-11e8-8d0a-005056c00008
+

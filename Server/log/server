@@ -1384,3 +1384,87 @@ ValueError: not enough values to unpack (expected 2, got 0)
     ip_port_1 , ip_port_2 = ''
 ValueError: not enough values to unpack (expected 2, got 0)
 
+2018-08-17 14:28:25,954 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试123.206.56.247:1080
+2018-08-17 14:29:41,914 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试47.97.45.181:1080
+2018-08-17 14:29:42,023 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试45.195.200.132:1080
+2018-08-17 14:29:42,048 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试188.120.239.196:12249
+2018-08-17 14:29:42,074 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.217.40:5756
+2018-08-17 14:29:42,083 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试45.195.200.132:1080
+2018-08-17 14:29:42,095 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:12510
+2018-08-17 14:29:42,108 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.199.36:15199
+2018-08-17 14:29:42,133 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.186:6667
+2018-08-17 14:29:42,148 - Server.Service.fanqiang_ip_service - DEBUG - 45.195.200.132:1080 失败
+2018-08-17 14:29:42,203 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.199.36:15199
+2018-08-17 14:29:42,223 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试109.200.132.146:8888
+2018-08-17 14:29:42,227 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试114.67.131.222:1080
+2018-08-17 14:29:42,233 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.118.131.136:6667
+2018-08-17 14:29:42,239 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试114.67.131.222:1080
+2018-08-17 14:29:42,241 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.189.215:60962
+2018-08-17 14:29:42,258 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:12510
+2018-08-17 14:29:42,264 - Server.Service.fanqiang_ip_service - DEBUG - 45.195.200.132:1080 失败
+2018-08-17 14:29:42,276 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.189.215:60962
+2018-08-17 14:29:42,285 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.213:6667
+2018-08-17 14:29:42,309 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:48038
+2018-08-17 14:29:42,322 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试118.139.176.242:40440
+2018-08-17 14:29:42,343 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试47.97.45.181:1080
+2018-08-17 14:29:42,351 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:12510
+2018-08-17 14:29:42,407 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试91.142.208.125:9910
+2018-08-17 14:29:43,144 - Server.Service.fanqiang_ip_service - DEBUG - 114.67.131.222:1080 失败
+2018-08-17 14:29:43,149 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.206:6667
+2018-08-17 14:29:43,795 - Server.Service.fanqiang_ip_service - DEBUG - 50.63.153.173:12510 失败
+2018-08-17 14:29:43,798 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.199:6667
+2018-08-17 14:29:43,827 - Server.Service.fanqiang_ip_service - DEBUG - 192.169.199.36:15199 失败
+2018-08-17 14:29:43,830 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试47.97.45.181:1080
+2018-08-17 14:29:43,946 - Server.Service.fanqiang_ip_service - DEBUG - 192.169.199.36:15199 失败
+2018-08-17 14:29:43,956 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:48038
+2018-08-17 14:29:44,001 - Server.Service.fanqiang_ip_service - DEBUG - 50.63.167.72:48038 失败
+2018-08-17 14:29:44,006 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.206:6667
+2018-08-17 14:29:44,024 - Server.Service.fanqiang_ip_service - DEBUG - 50.63.153.173:12510 失败
+2018-08-17 14:29:44,027 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.233.2:3898
+2018-08-17 14:29:44,098 - Server.Service.fanqiang_ip_service - DEBUG - 50.63.153.173:12510 失败
+2018-08-17 14:29:44,101 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.86.56:12890
+2018-08-17 14:29:44,536 - Server.Service.fanqiang_ip_service - DEBUG - 91.142.208.125:9910 失败
+2018-08-17 14:29:44,538 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.233.2:3898
+2018-08-17 14:29:44,772 - Server.Service.fanqiang_ip_service - DEBUG - 114.67.131.222:1080 失败
+2018-08-17 14:29:44,774 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试118.139.176.242:40440
+2018-08-17 14:29:45,517 - Server.Service.fanqiang_ip_service - DEBUG - 50.63.167.72:48038 失败
+2018-08-17 14:29:45,520 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.186:6667
+2018-08-17 14:29:45,569 - Server.Service.fanqiang_ip_service - DEBUG - 192.169.233.2:3898 失败
+2018-08-17 14:29:45,571 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.217.40:5756
+2018-08-17 14:29:45,923 - Server.Service.fanqiang_ip_service - DEBUG - 64.118.86.56:12890 失败
+2018-08-17 14:29:45,926 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.130.208:17502
+2018-08-17 14:29:46,064 - Server.Service.fanqiang_ip_service - DEBUG - 192.169.233.2:3898 失败
+2018-08-17 14:29:46,067 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.186:6667
+2018-08-17 14:29:47,453 - Server.Service.fanqiang_ip_service - DEBUG - 132.148.130.208:17502 失败
+2018-08-17 14:29:47,455 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.199:6667
+2018-08-17 14:29:52,250 - Server.Service.fanqiang_ip_service - DEBUG - 103.216.82.186:6667 失败
+2018-08-17 14:29:52,252 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.199:6667
+2018-08-17 14:29:52,346 - Server.Service.fanqiang_ip_service - DEBUG - 109.200.132.146:8888 失败
+2018-08-17 14:29:52,348 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.85.92.132:1080
+2018-08-17 14:29:53,169 - Server.Service.fanqiang_ip_service - DEBUG - 103.216.82.206:6667 失败
+2018-08-17 14:29:53,171 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试123.112.203.209:1080
+2018-08-17 14:29:53,814 - Server.Service.fanqiang_ip_service - DEBUG - 103.216.82.199:6667 失败
+2018-08-17 14:29:53,817 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.12:12890
+2018-08-17 14:29:54,028 - Server.Service.fanqiang_ip_service - DEBUG - 103.216.82.206:6667 失败
+2018-08-17 14:29:54,031 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试123.206.56.247:1080
+2018-08-17 14:29:55,139 - Server.Service.fanqiang_ip_service - DEBUG - 103.85.92.132:1080 失败
+2018-08-17 14:29:55,142 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试188.120.239.196:12249
+2018-08-17 14:29:55,495 - Server.Service.fanqiang_ip_service - DEBUG - 64.118.87.12:12890 失败
+2018-08-17 14:29:55,498 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试124.195.19.18:1080
+2018-08-17 14:30:03,190 - Server.Service.fanqiang_ip_service - DEBUG - 123.112.203.209:1080 失败
+2018-08-17 14:30:03,193 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试118.139.164.224:1864
+2018-08-17 14:30:04,927 - Server.Service.fanqiang_ip_service - DEBUG - 118.139.164.224:1864 失败
+2018-08-17 14:30:04,929 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试188.120.234.190:9261
+2018-08-17 14:30:05,519 - Server.Service.fanqiang_ip_service - DEBUG - 124.195.19.18:1080 失败
+2018-08-17 14:30:05,522 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.189.215:60962
+2018-08-17 17:31:42,071 - __main__ - ERROR - 58e96e6c-a200-11e8-b5e4-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 36, in get_new_ip_port
+    vertify_pass,not_pass_reason = user_service.vertify_user(account,password)
+ValueError: too many values to unpack (expected 2)
+
+2018-08-17 17:35:17,702 - __main__ - ERROR - b20d8f8a-a200-11e8-8d0a-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 36, in get_new_ip_port
+    vertify_pass,not_pass_reason = user_service.vertify_user(account,password)[:1]
+ValueError: not enough values to unpack (expected 2, got 1)
+
+2018-08-17 17:44:02,919 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试123.206.56.247:1080

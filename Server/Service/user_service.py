@@ -13,7 +13,26 @@ logger = log_utils.Log('Server/log/server').logger
 user_collection = user_model.User()
 ip_collection = ip_model.Fanqiang()
 
-def vertify_user(account,password):
+def get_delaytime(account,password)->int:
+    user = vertify_user(account,password)[2]
+    level=1
+    delay = 60
+    if user:
+        level=user['level']
+    if level==1:
+        delay = 60
+    if level == 2:
+        delay = 40
+    if level == 3:
+        delay = 30
+    if level == 4:
+        delay = 20
+    if level == 5:
+        delay = 10
+    return delay
+
+
+def vertify_user(account,password)->(bool,str,dict):
     '''
     验证用户是否合法
     :param account:账号
@@ -30,16 +49,16 @@ def vertify_user(account,password):
     '''
     try:
         user = user_collection.query({'account':account}).next()
-        if user['is_freeze']:
-            return False, '账号目前处于冻结状态'
+        if user['is_frozen']:
+            return False, '账号目前处于冻结状态',user
         if not user['password']==password:
-            return False,'密码不正确'
+            return False,'密码不正确',user
     except StopIteration as e:
-        return False,'不存在此账号'
+        return False,'不存在此账号',{}
     except Exception as e:
         logger.info(traceback.format_exc())
-        return False,str(e)
-    return True,'ok'
+        return False,str(e),{}
+    return True,'ok',user
 
 def update_and_get_using_ip_port(account):
     '''
