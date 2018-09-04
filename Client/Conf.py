@@ -42,7 +42,7 @@ class Dynamic_conf():
             #         frw.seek(line_offset[index])
             #         frw.write(key+'='+value+'\n')
             #         return
-        raise Exception('设置属性：%s失败，配置文件里没有改属性' % key)
+        # raise Exception('设置属性：%s失败，配置文件里没有改属性' % key)
 
     @property
     def proxy_filt_path(self):

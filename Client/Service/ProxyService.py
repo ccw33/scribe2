@@ -114,7 +114,7 @@ class AutoUpdater():
         if not resp.status_code == 200:
             if resp.status_code==401:
                 raise AccountException(message=resp.content.decode('utf-8'))
-            raise exception_utils.ServerErtrorException(resp.content.decode('utf-8'))
+            raise exception_utils.ServerErrorException(resp.content.decode('utf-8'))
         ip_port_list_and_delaytime = json.loads(resp.content.decode('utf-8'))
         return ip_port_list_and_delaytime
 

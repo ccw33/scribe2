@@ -19,9 +19,9 @@ logger = log_utils.Log('Server/log/server',logging.DEBUG if app.debug else loggi
 
 @app.route('/')
 def hello_world():
-    ip_port=fanqiang_ip_service.get_random_ip_port_dict()
-    return 'Hello World! ----%s----%s' % (request.args['index'],ip_port)
-
+    # ip_port=fanqiang_ip_service.get_random_ip_port_dict()
+    # return 'Hello World! ----%s----%s' % (request.args['index'],ip_port)
+    return 'Hello World'
 
 
 @app.route('/get_new_ip_port',methods=['GET'])
@@ -63,3 +63,4 @@ if __name__ == '__main__':
             doctest.testmod()
     else:
         app.run(host='0.0.0.0', port='5083')
+        # app.run(host='0.0.0.0', port='5083',ssl_context='adhoc')

@@ -7,8 +7,9 @@ import sys
 from Utils import  log_utils
 from model.fangqiang import  user as user_model,ip as ip_model
 from Server.Service import  fanqiang_ip_service
+import logging
 
-logger = log_utils.Log('Server/log/server').logger
+logger = log_utils.Log('Server/log/server',level=logging.DEBUG,name=__name__).logger
 
 user_collection = user_model.User()
 ip_collection = ip_model.Fanqiang()
@@ -60,6 +61,7 @@ def vertify_user(account,password)->(bool,str,dict):
         return False,str(e),{}
     return True,'ok',user
 
+
 def update_and_get_using_ip_port(account):
     '''
     更新并获取当前用户正在使用的ip_port(ip_port已失效的情况下才会更新)
@@ -79,28 +81,43 @@ def update_and_get_using_ip_port(account):
     ip_port_1 , ip_port_2 = '',''
     #获取所使用的ip_port
     user = user_collection.query({'account':account}).next()
-    if user['ip_with_port_1']:
-        ip_with_port_dict_1 = ip_collection.query({'ip_with_port':user['ip_with_port_1']}).next()
-        # 测试能否使用
-        try:
-            fanqiang_ip_service.test_proxy(ip_with_port_dict_1)
-            ip_port_1 = ip_with_port_dict_1['ip_with_port']
-        except (requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e:
-            logger.debug('代理 %s 已失效' % ip_with_port_dict_1['ip_with_port'])
-            # 不能使用就删除并更新
-            ip_port_1 = fanqiang_ip_service.delete_and_update_ip_port(ip_with_port_dict_1['ip_with_port'])
 
+    def test_and_update_single_ip_port(ip_port_col_name)->str:
+        '''
+        就单个user里面的ip_port而言进行更新
+        :param ip_port_col_name: user中使用的ip_port字段名，比如’ip_with_port_1','ip_with_port_2'
+        :return: 可用的ip_port
+        '''
+        ip_port = ''
+        cursor = ip_collection.query({'ip_with_port': user[ip_port_col_name]})
+        if cursor.count():
+            ip_with_port_dict = cursor.next()
+            # 测试能否使用
+            try:
+                use_time = fanqiang_ip_service.test_proxy(ip_with_port_dict)
+                ip_with_port_dict['time']=use_time
+                ip_port = ip_with_port_dict['ip_with_port']
+            except (requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e:
+                logger.debug('代理 %s 已失效' % ip_with_port_dict['ip_with_port'])
+                # 不能使用就增加disable统计次数，如果满10次就删除并更新
+                temp_ip_port = fanqiang_ip_service.disable_and_update_if_needed(ip_with_port_dict)
+                if temp_ip_port == ip_with_port_dict['ip_with_port']:  # 如果没更新，只是disable_times+1就重新获取并更新该user的ip_port_dict
+                    ip_port = fanqiang_ip_service.get_random_useful_ip_port_dict()['ip_with_port']
+                    user_collection.update({ip_port_col_name: ip_port}, {'_id': user['_id']})
+                else:  # 如果有更新就直接使用该ip_port_dict
+                    ip_port = temp_ip_port
+        else:
+            logger.warning('出现ip_port被删而没有更新数据库的情况')
+            while not ip_port:
+                new_ip_port_dict = fanqiang_ip_service.get_random_useful_ip_port_dict()
+                user_collection.update({ip_port_col_name: new_ip_port_dict['ip_with_port']}, {'_id': user['_id']})
+                ip_port = new_ip_port_dict['ip_with_port']
+        return ip_port
+
+    if user['ip_with_port_1']:
+        ip_port_1 = test_and_update_single_ip_port('ip_with_port_1')
     if user['ip_with_port_2'] and user['level']>=5:
-        ip_with_port_dict_2 = ip_collection.query({'ip_with_port':user['ip_with_port_2']})
-        # 测试能否使用
-        try:
-            fanqiang_ip_service.test_proxy(ip_with_port_dict_2)
-            ip_port_2 = ip_with_port_dict_2['ip_with_port']
-        except (requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e:
-            logger.debug('代理 %s 已失效' % ip_with_port_dict_2['ip_with_port'])
-            #不能使用就删除并更新
-            ip_port_2 = fanqiang_ip_service.delete_and_update_ip_port(ip_with_port_dict_2['ip_with_port'])
-        
+        ip_port_2 = test_and_update_single_ip_port('ip_with_port_2')
 
     #重新获取并返回
     return ip_port_1,ip_port_2
@@ -112,4 +129,4 @@ if __name__ == '__main__':
             import doctest
             doctest.testmod()
     else:
-        pass
+        update_and_get_using_ip_port('ccw')

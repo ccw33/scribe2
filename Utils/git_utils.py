@@ -23,3 +23,8 @@ class Git():
         remote = repo.remote()
         # 提交到远程库
         remote.push()
+
+if __name__ == "__main__":
+    file_path_chrome = 'E:/git-repository/blog/ccw33.github.io/file/OmegaProfile_auto_switch.pac'
+    file_path_chrome_socks = 'E:/git-repository/blog/ccw33.github.io/file/OmegaProfile_socks.pac'
+    Git().git_push(file_path_chrome)

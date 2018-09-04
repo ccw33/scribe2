@@ -1,6 +1,7 @@
 # encoding:utf-8
 
 from model.fangqiang import ip
+from Server.Service import fanqiang_ip_service
 
 import traceback
 import random
@@ -34,6 +35,8 @@ file_path_chrome_socks = 'E:/git-repository/blog/ccw33.github.io/file/OmegaProfi
 
 is_ok_at_least_one = False
 
+useful_proxy_in_mongo = []
+
 
 def generate_replace_text(ip_fanqiang_list):
     new_proxy_list = ["%s%s = %s,%s\n" % (
@@ -49,12 +52,17 @@ def update_surge_pac():
     更新surge用的pac
     :return:
     '''
-    ip_fanqiang_list = list(Fanqiang.query())
-    if len(ip_fanqiang_list) < 7:
-        pass
-    else:
-        start = math.floor(random.random() * len(ip_fanqiang_list))
-        ip_fanqiang_list = ip_fanqiang_list[start:start + 5]
+    #
+    # ip_fanqiang_list = list(Fanqiang.query())
+    # if len(ip_fanqiang_list) < 7:
+    #     pass
+    # else:
+    #     start = math.floor(random.random() * len(ip_fanqiang_list))
+    #     ip_fanqiang_list = ip_fanqiang_list[start:start + 5]
+
+    if not useful_proxy_in_mongo:
+        raise Exception("请先执行 update_chrome_pac 再执行 update_surge_pac")
+    ip_fanqiang_list = useful_proxy_in_mongo
 
     # 读取文件
     old_text = ''
@@ -126,6 +134,7 @@ def update_chrome_pac_by_gatherproxy():
             'proxy_type': 'socks5',
         }
         q.put(ip_dict)
+
     for i in range(20) if not google_machine_test else range(5):
         t = threading.Thread(target=get_useful_fanqiang_ip_gatherproxy, args=(q,))
         t.start()
@@ -149,9 +158,21 @@ def get_useful_fanqiang_ip_mongo(q):
                                          'https': proxy_type + (
                                              'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
                                 timeout=10)
+            try:
+                lock.acquire()
+                useful_proxy_in_mongo.append(ip_dict)
+            finally:
+                lock.release()
 
             # if not re.findall(r'input value=\"Google',resp.text):
             #     raise scribe_utils.RobotException()
+
+            # try:
+            #     elite = scribe_utils.test_elite(ip_dict['ip_with_port'], ip_dict['proxy_type'])
+            #     if elite:
+            #         Fanqiang.update({'Elite': elite}, {'ip_with_port': ip_dict['ip_with_port']})
+            # except Exception as e:
+            #     logger.warning(traceback.format_exc())
 
             if not google_machine_test:
                 logger.debug(ip_with_port + "可用")
@@ -168,7 +189,8 @@ def get_useful_fanqiang_ip_mongo(q):
                                    driver.page_source):  # 证明需要机器人验证
                     driver.quit()
                     # ip_fanqiang_list.remove(ip_dict)
-                    Fanqiang.delete({'ip_with_port': ip_with_port})
+                    fanqiang_ip_service.disable_and_update_if_needed(ip_dict)
+                    # Fanqiang.delete({'ip_with_port': ip_with_port})
                     continue
                 else:  # 不需要验证，可以使用
                     logger.debug(ip_with_port + "可用")
@@ -178,7 +200,8 @@ def get_useful_fanqiang_ip_mongo(q):
                requests.exceptions.ConnectionError, requests.ReadTimeout, requests.exceptions.SSLError) as e:
             try:
                 lock.acquire()
-                Fanqiang.delete({'ip_with_port': ip_with_port})
+                fanqiang_ip_service.disable_and_update_if_needed(ip_dict)
+                # Fanqiang.delete({'ip_with_port': ip_with_port})
             except Exception as e:
                 logger.info(e)
             finally:
@@ -188,7 +211,8 @@ def get_useful_fanqiang_ip_mongo(q):
             driver.quit()
             try:
                 lock.acquire()
-                Fanqiang.delete({'ip_with_port': ip_with_port})
+                fanqiang_ip_service.disable_and_update_if_needed(ip_dict)
+                # Fanqiang.delete({'ip_with_port': ip_with_port})
             except Exception as e:
                 logger.info(e)
             finally:
@@ -197,7 +221,8 @@ def get_useful_fanqiang_ip_mongo(q):
         except Exception as e:
             try:
                 lock.acquire()
-                Fanqiang.delete({'ip_with_port': ip_with_port})
+                fanqiang_ip_service.disable_and_update_if_needed(ip_dict)
+                # Fanqiang.delete({'ip_with_port': ip_with_port})
             except Exception as e:
                 logger.info(e)
             finally:
@@ -211,6 +236,53 @@ def get_useful_fanqiang_ip_mongo(q):
             continue
         finally:
             q.task_done()
+
+def save_all_from_gatherproxy():
+    '''
+    保存收集到的所有的gather_proxy，不筛选
+    :return:
+    '''
+    merge_proxy()
+    with open('file/proxy_file/proxies.txt', 'r') as fr:
+        try:
+            ip_port_list = fr.read().split('\n')
+        except Exception:
+            logger.error(traceback.format_exc())
+            return
+        finally:
+            fr.close()
+
+    def save(ip_with_port,proxy_type):
+        try:
+            elite = scribe_utils.test_elite(ip_with_port, proxy_type)
+        except Exception as e:
+            logger.info(str(e))
+            return
+
+        try:
+            lock.acquire()
+            if elite:
+                Fanqiang.save({'proxy_type': proxy_type, 'ip_with_port': ip_with_port,
+                               'time': 0.00, 'location': scribe_utils.get_location(ip_with_port.split(':')[0]),
+                               'Elite': elite})
+            else:
+                Fanqiang.save({'proxy_type': proxy_type, 'ip_with_port': ip_with_port,
+                               'time': 0.00, 'location': scribe_utils.get_location(ip_with_port.split(':')[0])})
+        except Exception as e:
+            logger.info(e)
+        finally:
+            lock.release()
+
+    q = queue.Queue()
+    tf = thread_utils.ThreadFactory()
+    for i in range(20):
+        t = threading.Thread(target=tf.queue_threads_worker,args=(q,save))
+        t.start()
+    for ip_with_port in ip_port_list:
+        q.put({'ip_with_port':ip_with_port,'proxy_type':'socks5'})
+    q.join()
+    tf.all_task_done = True
+    os.remove('file/proxy_file/proxies.txt')
 
 
 def get_useful_fanqiang_ip_gatherproxy(q):
@@ -229,19 +301,24 @@ def get_useful_fanqiang_ip_gatherproxy(q):
                                 timeout=10)
             # if not re.findall(r'input value=\"Google',resp.text):
             #     raise scribe_utils.RobotException()
-
             use_time = resp.elapsed.microseconds / math.pow(10, 6)
+
             if not google_machine_test:
                 logger.debug(ip_with_port + "可用")
+                elite = scribe_utils.test_elite(ip_dict['ip_with_port'], ip_dict['proxy_type'])
                 try:
                     lock.acquire()
-                    Fanqiang.save({'proxy_type': proxy_type, 'ip_with_port': ip_with_port,
-                                   'time': use_time, 'location': scribe_utils.get_location(ip_with_port.split(':')[0])})
+                    if elite:
+                        Fanqiang.save({'proxy_type': proxy_type, 'ip_with_port': ip_with_port,
+                                       'time': use_time,'location': scribe_utils.get_location(ip_with_port.split(':')[0]),
+                                       'Elite': elite})
+                    else:
+                        Fanqiang.save({'proxy_type': proxy_type, 'ip_with_port': ip_with_port,
+                                       'time': use_time,'location': scribe_utils.get_location(ip_with_port.split(':')[0])})
                 except Exception as e:
                     logger.info(e)
                 finally:
                     lock.release()
-
                     modify_chrome_pac_file_and_push(ip_with_port)
 
             else:
@@ -271,23 +348,9 @@ def get_useful_fanqiang_ip_gatherproxy(q):
                     modify_chrome_pac_file_and_push(ip_with_port)
         except (requests.exceptions.ConnectionError, requests.ReadTimeout\
                , requests.exceptions.SSLError, scribe_utils.RobotException) as e:
-            try:
-                lock.acquire()
-                Fanqiang.delete({'ip_with_port': ip_with_port})
-            except Exception as e:
-                logger.info(e)
-            finally:
-                lock.release()
             continue
         except exceptions.TimeoutException as e:  # 浏览器访问超时
             driver.quit()
-            try:
-                lock.acquire()
-                Fanqiang.delete({'ip_with_port': ip_with_port})
-            except Exception as e:
-                logger.info(e)
-            finally:
-                lock.release()
             continue
         except Exception as e:
             if driver:
@@ -450,9 +513,8 @@ if __name__ == "__main__":
     #     time.sleep(3600*6)
 
     update_chrome_pac()
-    update_chrome_pac_by_gatherproxy()
+    # update_chrome_pac_by_gatherproxy()
+    save_all_from_gatherproxy()
     update_surge_pac()
     logger.debug('DONE!!!')
 
-    # ip_fanqiang_list = list(Fanqiang.query())
-    # ip_fanqiang_list = [ip_port_dict['ip_with_port'] for ip_port_dict in ip_fanqiang_list if ip_port_dict['ip_with_port'].split(':')[1]]

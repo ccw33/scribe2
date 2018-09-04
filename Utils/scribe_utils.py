@@ -31,7 +31,7 @@ headers = {
 lock = threading.Lock()
 lock2 = threading.Lock()
 
-logger = Log('log/scribe_utils').logger
+logger = Log('log/scribe_utils',name=__name__).logger
 
 # 初始化数据库
 client = pymongo.MongoClient('localhost', 27017)
@@ -264,6 +264,39 @@ def get_location(ip):
         'postcode': "邮编:{}".format(response.postal.code)
     }
     return data
+
+
+def test_elite(ip_with_port,proxy_type)->dict or None:
+    '''
+    验证是否匿名
+    :param ip_with_port: 如 '192.155.135.21:466'
+    :param proxy_type: 如 'socks5'
+    :return:
+    '''
+    try:
+        resp = requests.get('https://whoer.net/zh', headers=headers,
+                            proxies={'http': proxy_type + (
+                                'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port,
+                                     'https': proxy_type + (
+                                         'h' if proxy_type == 'socks5' else '') + '://' + ip_with_port},
+                            timeout=10)
+        soup = BeautifulSoup(resp.text, 'lxml')
+        tags = soup.select('.your-ip')
+        ip = tags[0].text
+        if not ip:
+            return
+        the_ip = ip_with_port.split(':')[0]
+        if not ip == the_ip:
+            location = get_location(ip)
+            print("%s匿名，表现地址为：%s" % (the_ip,ip))
+            return {'ip':ip,'location':location}
+        else:
+            print("%s不匿名" % the_ip)
+            return
+    except (requests.exceptions.ConnectionError, requests.ReadTimeout \
+                    , requests.exceptions.SSLError, RobotException) as e:
+        print(str(e))
+        return
 
 
 def print_action_name(prefix='', debug=False):
