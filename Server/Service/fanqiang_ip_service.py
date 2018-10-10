@@ -3,6 +3,7 @@ import logging
 import math
 import random
 import re
+from functools import reduce
 
 import requests
 
@@ -98,3 +99,78 @@ def disable_and_update_if_needed(ip_port_dict)->str:
     if is_disable_totaly():
         return delete_and_update_ip_port(ip_port_dict['ip_with_port'])
     return ip_port_dict['ip_with_port']
+
+def get_dynamic_pac(pac_type,account)->(str,str):
+    '''
+    动态生成pac文件提供用户下载
+    :param pac_type: 有surge,auto_switch，socks3种，后面两个用于chrome
+    :param account: 账号，用于获取用户所使用的ip_with_port
+    :return:
+    '''
+    filename=''
+    pac=''
+
+    def get_ip_port_dict_list(account)->list:
+        '''
+        获取用户所使用的ip_with_port_list
+        :param account:
+        :return:
+        '''
+        u = user.query({'account': account}).next()
+        ip_port_dict_list = []
+        if u['ip_with_port_1']:
+            ip_port_dict_list.append(fanqiang.query({'ip_with_port': u['ip_with_port_1']}).next())
+        if u['ip_with_port_2']:
+            ip_port_dict_list.append(fanqiang.query({'ip_with_port': u['ip_with_port_2']}).next())
+
+        return ip_port_dict_list
+
+    def generate_replace_text(ip_fanqiang_list):
+        '''
+        根据ip_fanqiang_list生成替换文字
+        :param ip_fanqiang_list:
+        :return:
+        '''
+        new_proxy_list = ["%s%s = %s,%s\n" % (
+            ip['proxy_type']+'_', str(index), ip['proxy_type'] if ip['proxy_type'] == 'http' else 'socks5',
+            ip['ip_with_port'].replace(':', ',')) for index, ip in enumerate(ip_fanqiang_list)]
+        new_proxy_group = [s.split('=')[0] for s in new_proxy_list]
+        return (reduce(lambda v1, v2: v1 + v2, new_proxy_list), reduce(lambda v1, v2: v1 + ',' + v2, new_proxy_group) + ',')
+
+    def get_dynamic_chrome_file(filename):
+        # 替换ip和port
+        ip_port_dict_list = get_ip_port_dict_list(account)
+        ip_with_port = ip_port_dict_list[0]['ip_with_port']
+        with open('file/pac/'+filename,
+                  'r', encoding='utf-8') as fr:
+            old_text = fr.read()
+            new_text = old_text.replace(re.findall(r'(?:SOCKS |SOCKS5 )(\d+\.\d+\.\d+\.\d+:\d+)', old_text)[0],
+                                        ip_with_port)
+            new_text = new_text.replace(re.findall(r'(?:SOCKS |SOCKS5 )(\d+\.\d+\.\d+\.\d+:\d+)', old_text)[1],
+                                        ip_with_port)
+            return new_text
+
+    if pac_type=='surge':
+        filename = 'http_surge.pac'
+        ip_port_dict_list=get_ip_port_dict_list(account)
+
+        with open('file/pac/'+filename, 'r', encoding='utf-8') as fr:
+            old_text = fr.read()
+            proxy_replace_text, group_replace_text = generate_replace_text(ip_port_dict_list)
+            new_text = old_text.replace(re.findall(r'\[Proxy\]\n((?:.+\n)+)Socks1',
+                                                   old_text)[0], proxy_replace_text)
+            new_text = new_text.replace(
+                re.findall(
+                    r'\[Proxy Group\]\nProxy = url-test, (.+) url = http://www.google.com/generate_204\nSocks_Proxy',
+                    new_text)[0], group_replace_text)
+            pac = new_text
+    if pac_type == 'socks':
+        filename = 'OmegaProfile_socks.pac'
+        pac = get_dynamic_chrome_file(filename)
+    if pac_type == 'auto_switch':
+        filename = 'OmegaProfile_auto_switch.pac'
+        pac = get_dynamic_chrome_file(filename)
+    if filename and pac:
+        return filename,pac
+    else:
+        raise Exception('获取动态pac失败，{}获取了空值'.format('filename' if not filename else 'pac'))

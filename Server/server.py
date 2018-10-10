@@ -5,10 +5,11 @@ import traceback
 
 import requests
 import sys
-from flask import Flask,render_template,Response,request
+from flask import Flask,render_template,Response,request,send_file,make_response
+import mimetypes
 
 from Server.Service import fanqiang_ip_service,user_service
-from Utils import  log_utils
+from Utils import  log_utils,wrapper_utils
 from model.fangqiang import user
 
 
@@ -23,26 +24,21 @@ def hello_world():
     # return 'Hello World! ----%s----%s' % (request.args['index'],ip_port)
     return 'Hello World'
 
-
 @app.route('/get_new_ip_port',methods=['GET'])
+@wrapper_utils.login_checker(request)
 def get_new_ip_port():
     request_id = request.args['uuid']
     reason = request.args['reason']
-    account = request.args['account']
-    password = request.args['password']
     try:
         # 首先测试原来的ip能不能用（防止已更新）
-        # 验证用户
-        vertify_pass,not_pass_reason = user_service.vertify_user(account,password)[:2]
-        if not vertify_pass:
-            return Response(not_pass_reason,status=401)
         # 更新并获取该用户的ip_port(ip_port已失效的情况下才会更新)
-        ip_with_port_1,ip_with_port_2 = user_service.update_and_get_using_ip_port(account)
+        ip_with_port_1,ip_with_port_2 = user_service.update_and_get_using_ip_port(request.args['account'])
     except Exception as e:
         logger.error("%s - %s" % (request_id,traceback.format_exc()))
         return Response("服务器出错，请联系管理员，请求id是：%s" % request_id,status=500)
 
     return Response(json.dumps([ip_with_port_1,ip_with_port_2]))
+
 
 @app.route('/get_delaytime', methods=['GET'])
 def get_delaytime():
@@ -55,6 +51,23 @@ def get_delaytime():
     except Exception as e:
         logger.error("%s - %s" % (request_id,traceback.format_exc()))
         return Response("服务器出错，请联系管理员，请求id是：%s" % request_id,status=500)
+
+@app.route('/get_pac', methods=['GET'])
+@wrapper_utils.login_checker(request)
+def get_pac():
+    request_id = request.args['uuid']
+    try:
+        pac_type = request.args['type']
+        filename, pac = fanqiang_ip_service.get_dynamic_pac(pac_type,request.args['account'])
+
+        response = make_response(pac)
+        response.headers['Content-Type'] = 'application/x-ns-proxy-autoconfig'
+        response.headers['Content-Disposition'] = 'attachment; filename={}'.format(filename.encode().decode('latin-1'))
+        return response
+    except Exception as e:
+        logger.error("%s - %s" % (request_id,traceback.format_exc()))
+        return Response("服务器出错，请联系管理员，请求id是：%s" % request_id,status=500)
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:

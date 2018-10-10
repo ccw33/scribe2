@@ -33,7 +33,7 @@ def get_delaytime()->int:
     password = dynamic_conf.password
     resp = requests.get(Conf.server+'get_delaytime',params={'account':account,'password':password,'uuid':uuid})
     if resp.status_code!=200:
-        raise exception_utils.ServerErrorException(json.dumps(resp.content.decode('utf-8')))
+        raise exception_utils.ServerErrorException(resp.content.decode('utf-8'))
     return int(resp.content)
 
 # todo

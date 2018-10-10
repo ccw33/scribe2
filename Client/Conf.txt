@@ -1,9 +1,25 @@
 proxy_filt_path=D:/Privoxy/config.txt
-proxy1=192.169.180.124:22428
+proxy1=192.169.250.198:13090
 proxy2=
 
 account=ccw
 password=123qwe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
