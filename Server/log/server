@@ -2172,3 +2172,866 @@ IndexError: list index out of range
 2018-09-21 16:55:15,132 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.44:36370
 2018-09-21 16:55:25,217 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.44:36370 无法翻墙，从新获取
 2018-09-21 16:55:25,306 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:13090
+2018-10-12 16:18:46,237 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:13090
+2018-10-12 16:18:47,882 - Server.Service.user_service - DEBUG - 代理 192.169.250.198:13090 已失效
+2018-10-12 16:18:48,079 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试213.200.56.86:60830
+2018-10-12 16:59:36,324 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试213.200.56.86:60830
+2018-10-12 17:20:05,954 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试213.200.56.86:60830
+2018-10-12 17:20:16,204 - Server.Service.user_service - DEBUG - 代理 213.200.56.86:60830 已失效
+2018-10-12 17:20:18,083 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试80.211.37.61:9050
+2018-10-12 17:20:28,135 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 80.211.37.61:9050 无法翻墙，从新获取
+2018-10-12 17:20:28,167 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.171.248.222:42599
+2018-10-12 17:20:29,976 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.171.248.222:42599 无法翻墙，从新获取
+2018-10-12 17:20:30,009 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.72:42599
+2018-10-12 17:20:31,734 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.72:42599 无法翻墙，从新获取
+2018-10-12 17:20:31,799 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:36223
+2018-10-12 17:20:33,859 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:36223 无法翻墙，从新获取
+2018-10-12 17:20:33,897 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.104:42599
+2018-10-12 17:20:35,676 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.104:42599 无法翻墙，从新获取
+2018-10-12 17:20:35,709 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:48050
+2018-10-12 17:20:45,741 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.153.173:48050 无法翻墙，从新获取
+2018-10-12 17:20:45,777 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.1.27.46:1080
+2018-10-12 17:20:46,858 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.1.27.46:1080 无法翻墙，从新获取
+2018-10-12 17:20:46,942 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.171.248.174:42599
+2018-10-12 17:20:48,808 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.171.248.174:42599 无法翻墙，从新获取
+2018-10-12 17:20:48,845 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:14668
+2018-10-12 17:20:50,860 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:14668 无法翻墙，从新获取
+2018-10-12 17:20:50,925 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.180.124:59326
+2018-10-12 17:20:52,532 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.180.124:59326 无法翻墙，从新获取
+2018-10-12 17:20:52,570 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试52.221.78.205:1082
+2018-10-12 17:20:53,824 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 52.221.78.205:1082 无法翻墙，从新获取
+2018-10-12 17:20:53,871 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试199.38.28.44:37606
+2018-10-12 17:21:03,923 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 199.38.28.44:37606 无法翻墙，从新获取
+2018-10-12 17:21:13,409 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试89.107.184.55:3363
+2018-10-12 17:21:15,106 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 89.107.184.55:3363 无法翻墙，从新获取
+2018-10-12 17:21:15,167 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试151.237.173.212:39880
+2018-10-12 17:21:16,914 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 151.237.173.212:39880 无法翻墙，从新获取
+2018-10-12 17:21:16,953 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.190.163:9028
+2018-10-12 17:21:18,922 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.190.163:9028 无法翻墙，从新获取
+2018-10-12 17:21:18,988 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试199.38.28.44:33554
+2018-10-12 17:21:29,080 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 199.38.28.44:33554 无法翻墙，从新获取
+2018-10-12 17:21:29,150 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试74.208.149.41:10080
+2018-10-12 17:21:30,956 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 74.208.149.41:10080 无法翻墙，从新获取
+2018-10-12 17:21:31,001 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.213.248.68:1080
+2018-10-12 17:21:41,080 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 103.213.248.68:1080 无法翻墙，从新获取
+2018-10-12 17:21:41,126 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试91.207.255.95:10080
+2018-10-12 17:21:43,038 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 91.207.255.95:10080 无法翻墙，从新获取
+2018-10-12 17:21:43,108 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.54:12650
+2018-10-12 17:21:53,146 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.54:12650 无法翻墙，从新获取
+2018-10-12 17:21:53,184 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试134.213.63.218:10080
+2018-10-12 17:22:03,220 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 134.213.63.218:10080 无法翻墙，从新获取
+2018-10-12 17:22:03,267 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试100.37.125.183:1080
+2018-10-12 17:22:13,303 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 100.37.125.183:1080 无法翻墙，从新获取
+2018-10-12 17:22:13,345 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.191.169:9050
+2018-10-12 17:22:23,394 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.191.169:9050 无法翻墙，从新获取
+2018-10-12 17:22:23,432 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.255.230.71:10080
+2018-10-12 17:22:33,469 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.255.230.71:10080 无法翻墙，从新获取
+2018-10-12 17:22:33,525 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.53:36370
+2018-10-12 17:22:43,613 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.53:36370 无法翻墙，从新获取
+2018-10-12 17:22:43,662 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.143.128.178:39880
+2018-10-12 17:22:45,835 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.143.128.178:39880 无法翻墙，从新获取
+2018-10-12 17:22:45,883 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试222.165.225.245:18959
+2018-10-12 17:22:47,642 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 222.165.225.245:18959 无法翻墙，从新获取
+2018-10-12 17:22:47,756 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试222.180.195.156:4080
+2018-10-12 17:22:57,825 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 222.180.195.156:4080 无法翻墙，从新获取
+2018-10-12 17:22:57,867 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.230.155.122:37915
+2018-10-12 17:23:07,924 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.230.155.122:37915 无法翻墙，从新获取
+2018-10-12 17:23:07,975 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试107.170.7.132:47810
+2018-10-13 01:38:34,769 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试107.170.7.132:47810
+2018-10-13 01:48:59,117 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试107.170.7.132:47810
+2018-10-13 01:49:09,305 - Server.Service.user_service - DEBUG - 代理 107.170.7.132:47810 已失效
+2018-10-13 01:49:10,361 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.224.196:32449
+2018-10-13 01:49:20,412 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.224.196:32449 无法翻墙，从新获取
+2018-10-13 01:49:20,628 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.130.208:64228
+2018-10-13 01:49:30,646 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.130.208:64228 无法翻墙，从新获取
+2018-10-13 01:49:30,677 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:38827
+2018-10-13 01:49:40,695 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:38827 无法翻墙，从新获取
+2018-10-13 01:49:40,726 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:54600
+2018-10-13 01:49:50,777 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:54600 无法翻墙，从新获取
+2018-10-13 01:49:50,824 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试213.200.56.86:60830
+2018-10-13 01:50:00,901 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 213.200.56.86:60830 无法翻墙，从新获取
+2018-10-13 01:50:29,744 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试177.126.89.72:6667
+2018-10-13 01:50:39,774 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 177.126.89.72:6667 无法翻墙，从新获取
+2018-10-13 01:50:39,805 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试76.72.236.30:51200
+2018-10-13 01:50:49,856 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 76.72.236.30:51200 无法翻墙，从新获取
+2018-10-13 01:50:49,888 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:51009
+2018-10-13 01:50:59,964 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:51009 无法翻墙，从新获取
+2018-10-13 01:51:00,073 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.43.73:11747
+2018-10-13 01:51:10,098 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.43.73:11747 无法翻墙，从新获取
+2018-10-13 01:51:10,130 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试87.229.230.194:39880
+2018-10-13 01:51:20,172 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 87.229.230.194:39880 无法翻墙，从新获取
+2018-10-13 01:51:20,206 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:15971
+2018-10-13 01:51:30,237 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.250.198:15971 无法翻墙，从新获取
+2018-10-13 01:51:30,271 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.180.124:62981
+2018-10-13 01:51:40,291 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.180.124:62981 无法翻墙，从新获取
+2018-10-13 01:51:40,334 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.4.88.215:9050
+2018-10-13 01:51:50,371 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.4.88.215:9050 无法翻墙，从新获取
+2018-10-13 01:51:50,406 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试83.240.110.190:7866
+2018-10-13 01:52:00,426 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 83.240.110.190:7866 无法翻墙，从新获取
+2018-10-13 01:52:00,492 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.227.116.131:1080
+2018-10-13 01:52:10,547 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.227.116.131:1080 无法翻墙，从新获取
+2018-10-13 01:52:10,583 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.57:42599
+2018-10-13 01:52:20,605 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.57:42599 无法翻墙，从新获取
+2018-10-13 01:52:20,639 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.173:42852
+2018-10-13 01:52:30,660 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.173:42852 无法翻墙，从新获取
+2018-10-13 01:52:30,710 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.224.196:1757
+2018-10-13 01:52:40,731 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.224.196:1757 无法翻墙，从新获取
+2018-10-13 01:52:40,824 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.7:48502
+2018-10-13 01:52:50,845 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.7:48502 无法翻墙，从新获取
+2018-10-13 01:52:50,882 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.1.27.46:1080
+2018-10-13 01:53:00,916 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.1.27.46:1080 无法翻墙，从新获取
+2018-10-13 01:53:00,986 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.9:23641
+2018-10-13 01:53:11,014 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.9:23641 无法翻墙，从新获取
+2018-10-13 01:53:11,054 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试36.233.173.123:1080
+2018-10-13 01:53:21,078 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 36.233.173.123:1080 无法翻墙，从新获取
+2018-10-13 01:53:21,118 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.7.181:9992
+2018-10-13 01:53:31,156 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.7.181:9992 无法翻墙，从新获取
+2018-10-13 01:53:31,197 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.237.123:53638
+2018-10-13 01:53:41,230 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.237.123:53638 无法翻墙，从新获取
+2018-10-13 01:53:41,280 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:57852
+2018-10-13 01:53:51,312 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:57852 无法翻墙，从新获取
+2018-10-13 01:53:51,355 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:28016
+2018-10-13 01:54:01,378 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:28016 无法翻墙，从新获取
+2018-10-13 01:54:01,421 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试77.108.100.163:39880
+2018-10-13 01:54:11,444 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 77.108.100.163:39880 无法翻墙，从新获取
+2018-10-13 01:54:11,526 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试74.123.23.40:8704
+2018-10-13 01:54:21,569 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 74.123.23.40:8704 无法翻墙，从新获取
+2018-10-13 01:54:21,614 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试98.181.99.197:10368
+2018-10-13 01:54:31,637 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 98.181.99.197:10368 无法翻墙，从新获取
+2018-10-13 01:54:31,677 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.119:42599
+2018-10-13 01:54:41,700 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.119:42599 无法翻墙，从新获取
+2018-10-13 01:54:41,741 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.186.48:10103
+2018-10-13 01:54:51,765 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.186.48:10103 无法翻墙，从新获取
+2018-10-13 01:54:51,806 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试145.239.165.131:1080
+2018-10-13 01:55:01,831 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 145.239.165.131:1080 无法翻墙，从新获取
+2018-10-13 01:55:01,874 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.234.164:1970
+2018-10-13 01:55:11,899 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.234.164:1970 无法翻墙，从新获取
+2018-10-13 01:55:11,942 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.159.224.135:6677
+2018-10-13 01:55:21,979 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 176.159.224.135:6677 无法翻墙，从新获取
+2018-10-13 01:55:22,022 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:28232
+2018-10-13 01:55:32,048 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:28232 无法翻墙，从新获取
+2018-10-13 01:55:32,097 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:52535
+2018-10-13 01:55:42,121 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:52535 无法翻墙，从新获取
+2018-10-13 01:55:42,167 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试12.226.243.150:65000
+2018-10-13 01:55:52,192 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 12.226.243.150:65000 无法翻墙，从新获取
+2018-10-13 01:55:52,239 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:15339
+2018-10-13 01:56:02,267 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:15339 无法翻墙，从新获取
+2018-10-13 01:56:02,313 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.96.191:4570
+2018-10-13 01:56:12,339 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.96.191:4570 无法翻墙，从新获取
+2018-10-13 01:56:12,387 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试59.12.45.125:1080
+2018-10-13 01:56:22,427 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 59.12.45.125:1080 无法翻墙，从新获取
+2018-10-13 01:56:22,471 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试92.240.244.28:10080
+2018-10-13 01:56:32,497 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 92.240.244.28:10080 无法翻墙，从新获取
+2018-10-13 01:56:32,543 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.6.65.41:1080
+2018-10-13 01:56:42,569 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.6.65.41:1080 无法翻墙，从新获取
+2018-10-13 01:56:42,616 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试208.95.22.244:4608
+2018-10-13 01:56:52,647 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 208.95.22.244:4608 无法翻墙，从新获取
+2018-10-13 01:56:52,706 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:30336
+2018-10-13 01:57:02,734 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.250.198:30336 无法翻墙，从新获取
+2018-10-13 01:57:02,783 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试66.70.223.202:1080
+2018-10-13 01:57:12,830 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 66.70.223.202:1080 无法翻墙，从新获取
+2018-10-13 01:57:12,892 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试149.56.23.5:31749
+2018-10-13 01:57:22,945 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 149.56.23.5:31749 无法翻墙，从新获取
+2018-10-13 01:57:23,031 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.221:42599
+2018-10-13 01:57:33,057 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.221:42599 无法翻墙，从新获取
+2018-10-13 01:57:33,105 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.80:42599
+2018-10-13 01:57:43,132 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.80:42599 无法翻墙，从新获取
+2018-10-13 01:57:43,182 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试69.12.65.105:8912
+2018-10-13 01:57:53,225 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 69.12.65.105:8912 无法翻墙，从新获取
+2018-10-13 01:57:53,297 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试217.22.171.173:39880
+2018-10-13 01:58:03,324 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 217.22.171.173:39880 无法翻墙，从新获取
+2018-10-13 01:58:03,425 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.149.16:10080
+2018-10-13 01:58:13,454 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.149.16:10080 无法翻墙，从新获取
+2018-10-13 01:58:13,511 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试159.203.239.143:10080
+2018-10-13 01:58:23,539 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 159.203.239.143:10080 无法翻墙，从新获取
+2018-10-13 01:58:23,589 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.234.164:32485
+2018-10-13 01:58:33,617 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.234.164:32485 无法翻墙，从新获取
+2018-10-13 01:58:33,669 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.233.2:24380
+2018-10-13 01:58:43,698 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.233.2:24380 无法翻墙，从新获取
+2018-10-13 01:58:43,751 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.77:42599
+2018-10-13 01:58:53,797 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.77:42599 无法翻墙，从新获取
+2018-10-13 01:58:53,847 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:55292
+2018-10-13 01:59:03,878 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:55292 无法翻墙，从新获取
+2018-10-13 01:59:03,934 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:2573
+2018-10-13 01:59:13,964 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:2573 无法翻墙，从新获取
+2018-10-13 01:59:14,016 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:53052
+2018-10-13 01:59:24,046 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:53052 无法翻墙，从新获取
+2018-10-13 01:59:24,114 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:13477
+2018-10-13 01:59:34,145 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:13477 无法翻墙，从新获取
+2018-10-13 01:59:34,198 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.227.69.220:3263
+2018-10-13 01:59:44,232 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.227.69.220:3263 无法翻墙，从新获取
+2018-10-13 01:59:44,298 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试174.75.238.82:1080
+2018-10-13 01:59:54,334 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 174.75.238.82:1080 无法翻墙，从新获取
+2018-10-13 01:59:54,400 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.53:53344
+2018-10-13 02:00:04,432 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.53:53344 无法翻墙，从新获取
+2018-10-13 02:00:04,488 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.12.157.77:11725
+2018-10-13 02:00:14,528 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.12.157.77:11725 无法翻墙，从新获取
+2018-10-13 02:00:14,584 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.118.131.136:6667
+2018-10-13 02:00:24,627 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 176.118.131.136:6667 无法翻墙，从新获取
+2018-10-13 02:00:24,684 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.224.196:27355
+2018-10-13 02:00:34,724 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.224.196:27355 无法翻墙，从新获取
+2018-10-13 02:00:34,787 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试218.187.120.22:1080
+2018-10-13 02:00:44,837 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 218.187.120.22:1080 无法翻墙，从新获取
+2018-10-13 02:00:44,909 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试84.43.90.45:13590
+2018-10-13 02:00:54,949 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 84.43.90.45:13590 无法翻墙，从新获取
+2018-10-13 02:00:55,005 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:52715
+2018-10-13 02:01:05,037 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.250.198:52715 无法翻墙，从新获取
+2018-10-13 02:01:05,096 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.32.222.125:9050
+2018-10-13 02:01:15,130 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.32.222.125:9050 无法翻墙，从新获取
+2018-10-13 02:01:15,197 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试96.31.52.74:10200
+2018-10-13 02:01:25,230 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 96.31.52.74:10200 无法翻墙，从新获取
+2018-10-13 02:01:25,289 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试34.207.196.193:9050
+2018-10-13 02:01:35,321 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 34.207.196.193:9050 无法翻墙，从新获取
+2018-10-13 02:01:35,380 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:12613
+2018-10-13 02:01:45,417 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:12613 无法翻墙，从新获取
+2018-10-13 02:01:45,557 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.38.156:4750
+2018-10-13 02:01:55,590 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.38.156:4750 无法翻墙，从新获取
+2018-10-13 02:01:55,649 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.65:42599
+2018-10-13 02:02:05,683 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.65:42599 无法翻墙，从新获取
+2018-10-13 02:02:05,742 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试222.180.195.156:4080
+2018-10-13 02:02:15,782 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 222.180.195.156:4080 无法翻墙，从新获取
+2018-10-13 02:02:15,876 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.234.164:32485
+2018-10-13 02:02:25,923 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.234.164:32485 无法翻墙，从新获取
+2018-10-13 02:02:25,985 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:2573
+2018-10-13 02:02:36,020 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:2573 无法翻墙，从新获取
+2018-10-13 02:02:36,083 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.191.71:9050
+2018-10-13 02:02:46,124 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.191.71:9050 无法翻墙，从新获取
+2018-10-13 02:02:46,228 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试219.255.26.114:1080
+2018-10-13 02:02:56,272 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 219.255.26.114:1080 无法翻墙，从新获取
+2018-10-13 02:02:56,351 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.237.255.131:80
+2018-10-13 02:03:06,388 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.237.255.131:80 无法翻墙，从新获取
+2018-10-13 02:03:06,458 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.43:2447
+2018-10-13 02:03:16,498 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.43:2447 无法翻墙，从新获取
+2018-10-13 02:03:16,582 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:33980
+2018-10-13 02:03:26,620 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:33980 无法翻墙，从新获取
+2018-10-13 02:03:26,685 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.18:42599
+2018-10-13 02:03:36,738 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.18:42599 无法翻墙，从新获取
+2018-10-13 02:03:36,804 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:36223
+2018-10-13 02:03:46,861 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:36223 无法翻墙，从新获取
+2018-10-13 02:03:46,923 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.196.5:61311
+2018-10-13 02:03:56,969 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.196.5:61311 无法翻墙，从新获取
+2018-10-13 02:03:57,046 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.234.164:1970
+2018-10-13 02:04:07,082 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.234.164:1970 无法翻墙，从新获取
+2018-10-13 02:04:07,147 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:50885
+2018-10-13 02:04:17,208 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:50885 无法翻墙，从新获取
+2018-10-13 02:04:17,285 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.97.163:10080
+2018-10-13 02:04:27,321 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.97.163:10080 无法翻墙，从新获取
+2018-10-13 02:04:27,389 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.123:42599
+2018-10-13 02:04:37,442 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.123:42599 无法翻墙，从新获取
+2018-10-13 02:04:37,517 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试80.242.55.100:39880
+2018-10-13 02:04:47,565 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 80.242.55.100:39880 无法翻墙，从新获取
+2018-10-13 02:04:47,639 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.21:2447
+2018-10-13 02:04:57,681 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.21:2447 无法翻墙，从新获取
+2018-10-13 02:04:57,753 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.1.27.46:1080
+2018-10-13 02:05:07,792 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.1.27.46:1080 无法翻墙，从新获取
+2018-10-13 02:05:07,862 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.253:42599
+2018-10-13 02:05:17,929 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.253:42599 无法翻墙，从新获取
+2018-10-13 02:05:18,011 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.219.43.147:55808
+2018-10-13 02:05:28,063 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.219.43.147:55808 无法翻墙，从新获取
+2018-10-13 02:05:28,133 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:51317
+2018-10-13 02:05:38,173 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:51317 无法翻墙，从新获取
+2018-10-13 02:05:38,247 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试1.175.179.194:1080
+2018-10-13 02:05:48,302 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 1.175.179.194:1080 无法翻墙，从新获取
+2018-10-13 02:05:48,376 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试138.68.161.167:9876
+2018-10-13 02:05:58,417 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 138.68.161.167:9876 无法翻墙，从新获取
+2018-10-13 02:05:58,488 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试118.170.148.143:1080
+2018-10-13 02:06:08,528 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 118.170.148.143:1080 无法翻墙，从新获取
+2018-10-13 02:06:08,617 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试98.181.99.197:10368
+2018-10-13 02:06:18,656 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 98.181.99.197:10368 无法翻墙，从新获取
+2018-10-13 02:06:18,812 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.12.157.77:11725
+2018-10-13 02:06:28,853 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.12.157.77:11725 无法翻墙，从新获取
+2018-10-13 02:06:28,927 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.74:23222
+2018-10-13 02:06:38,969 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.74:23222 无法翻墙，从新获取
+2018-10-13 02:06:39,044 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.219.43.147:1536
+2018-10-13 02:06:49,085 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.219.43.147:1536 无法翻墙，从新获取
+2018-10-13 02:06:49,158 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试74.208.149.41:10080
+2018-10-13 02:06:59,199 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 74.208.149.41:10080 无法翻墙，从新获取
+2018-10-13 02:06:59,271 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试31.3.103.149:10080
+2018-10-13 02:07:09,314 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 31.3.103.149:10080 无法翻墙，从新获取
+2018-10-13 02:07:09,387 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.62.250.186:9050
+2018-10-13 02:07:19,432 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.62.250.186:9050 无法翻墙，从新获取
+2018-10-13 02:07:19,520 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试94.31.90.121:39880
+2018-10-13 02:07:29,564 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 94.31.90.121:39880 无法翻墙，从新获取
+2018-10-13 02:07:29,640 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.62.219.8:5080
+2018-10-13 02:07:39,682 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.62.219.8:5080 无法翻墙，从新获取
+2018-10-13 02:07:39,760 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试218.248.73.193:1080
+2018-10-13 02:07:49,802 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 218.248.73.193:1080 无法翻墙，从新获取
+2018-10-13 02:07:49,881 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试65.214.67.208:39880
+2018-10-13 02:07:59,926 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 65.214.67.208:39880 无法翻墙，从新获取
+2018-10-13 02:08:00,022 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试202.44.253.136:14244
+2018-10-13 02:08:10,069 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 202.44.253.136:14244 无法翻墙，从新获取
+2018-10-13 02:08:10,166 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.255.230.71:10080
+2018-10-13 02:08:20,218 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.255.230.71:10080 无法翻墙，从新获取
+2018-10-13 02:08:20,318 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.46:36370
+2018-10-13 02:08:30,364 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.46:36370 无法翻墙，从新获取
+2018-10-13 02:08:30,447 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.36.32.47:9050
+2018-10-13 02:08:40,492 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 176.36.32.47:9050 无法翻墙，从新获取
+2018-10-13 02:08:40,576 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试185.158.115.139:10080
+2018-10-13 02:08:50,620 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 185.158.115.139:10080 无法翻墙，从新获取
+2018-10-13 02:08:50,702 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.244.29:32449
+2018-10-13 02:09:00,749 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.244.29:32449 无法翻墙，从新获取
+2018-10-13 02:09:00,830 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试119.28.222.222:2282
+2018-10-13 02:09:10,877 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 119.28.222.222:2282 无法翻墙，从新获取
+2018-10-13 02:09:10,980 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.159.224.135:6677
+2018-10-13 02:09:21,025 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 176.159.224.135:6677 无法翻墙，从新获取
+2018-10-13 02:09:21,108 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.32:42599
+2018-10-13 02:09:31,155 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.32:42599 无法翻墙，从新获取
+2018-10-13 02:09:31,237 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.24:42599
+2018-10-13 02:09:41,292 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.24:42599 无法翻墙，从新获取
+2018-10-13 02:09:41,405 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:52701
+2018-10-13 02:09:51,453 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:52701 无法翻墙，从新获取
+2018-10-13 02:09:51,542 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:10167
+2018-10-13 02:10:01,589 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.153.173:10167 无法翻墙，从新获取
+2018-10-13 02:10:01,674 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.62.35.225:16040
+2018-10-13 02:10:11,720 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.62.35.225:16040 无法翻墙，从新获取
+2018-10-13 02:10:11,805 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.251.125:29320
+2018-10-13 02:10:21,860 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.251.125:29320 无法翻墙，从新获取
+2018-10-13 02:10:21,966 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.7:48502
+2018-10-13 02:10:32,017 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.7:48502 无法翻墙，从新获取
+2018-10-13 02:10:32,102 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.62.35.225:43330
+2018-10-13 02:10:42,148 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.62.35.225:43330 无法翻墙，从新获取
+2018-10-13 02:10:42,236 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试176.159.224.135:6677
+2018-10-13 02:10:52,284 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 176.159.224.135:6677 无法翻墙，从新获取
+2018-10-13 02:10:52,374 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.128.192.125:9050
+2018-10-13 02:11:02,423 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.128.192.125:9050 无法翻墙，从新获取
+2018-10-13 02:11:02,546 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.224.61.126:56549
+2018-10-13 02:11:12,596 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.224.61.126:56549 无法翻墙，从新获取
+2018-10-13 02:11:12,690 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试166.62.39.86:44345
+2018-10-13 02:11:22,741 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 166.62.39.86:44345 无法翻墙，从新获取
+2018-10-13 02:11:22,832 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试88.255.185.216:9050
+2018-10-13 02:11:32,883 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 88.255.185.216:9050 无法翻墙，从新获取
+2018-10-13 02:11:32,970 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.236.108:11868
+2018-10-13 02:11:43,018 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.236.108:11868 无法翻墙，从新获取
+2018-10-13 02:11:43,107 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.131:42599
+2018-10-13 02:11:53,158 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.131:42599 无法翻墙，从新获取
+2018-10-13 02:11:53,359 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.43.73:11747
+2018-10-13 02:12:03,411 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.43.73:11747 无法翻墙，从新获取
+2018-10-13 02:12:03,500 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试108.59.8.86:23614
+2018-10-13 02:12:13,548 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 108.59.8.86:23614 无法翻墙，从新获取
+2018-10-13 02:12:13,638 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.142.205:26456
+2018-10-13 02:12:23,691 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.142.205:26456 无法翻墙，从新获取
+2018-10-13 02:12:23,781 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试221.132.35.4:2214
+2018-10-13 02:12:33,834 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 221.132.35.4:2214 无法翻墙，从新获取
+2018-10-13 02:12:33,920 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.12.151.247:53213
+2018-10-13 02:12:43,970 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.12.151.247:53213 无法翻墙，从新获取
+2018-10-13 02:12:44,062 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试71.8.36.242:4025
+2018-10-13 02:12:54,119 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 71.8.36.242:4025 无法翻墙，从新获取
+2018-10-13 02:12:54,221 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试107.170.254.167:1221
+2018-10-13 02:13:04,275 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 107.170.254.167:1221 无法翻墙，从新获取
+2018-10-13 02:13:04,366 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.32.222.125:9050
+2018-10-13 02:13:14,419 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.32.222.125:9050 无法翻墙，从新获取
+2018-10-13 02:13:14,514 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试70.166.38.80:1080
+2018-10-13 02:13:24,574 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 70.166.38.80:1080 无法翻墙，从新获取
+2018-10-13 02:13:24,671 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.4.88.203:9050
+2018-10-13 02:13:34,726 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.4.88.203:9050 无法翻墙，从新获取
+2018-10-13 02:13:34,820 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试188.165.222.158:8020
+2018-10-13 02:13:44,876 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 188.165.222.158:8020 无法翻墙，从新获取
+2018-10-13 02:13:44,978 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.179.168.233:33966
+2018-10-13 02:13:55,033 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.179.168.233:33966 无法翻墙，从新获取
+2018-10-13 02:13:55,132 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.255.223.218:5124
+2018-10-13 02:14:05,190 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.255.223.218:5124 无法翻墙，从新获取
+2018-10-13 02:14:05,289 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:49758
+2018-10-13 02:14:15,344 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:49758 无法翻墙，从新获取
+2018-10-13 02:14:15,443 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.184.64:62153
+2018-10-13 02:14:25,498 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.184.64:62153 无法翻墙，从新获取
+2018-10-13 02:14:25,599 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.52:12650
+2018-10-13 02:14:35,665 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.52:12650 无法翻墙，从新获取
+2018-10-13 02:14:35,769 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.45:2447
+2018-10-13 02:14:45,827 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.45:2447 无法翻墙，从新获取
+2018-10-13 02:14:45,927 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试149.56.23.5:64580
+2018-10-13 02:14:55,988 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 149.56.23.5:64580 无法翻墙，从新获取
+2018-10-13 02:14:56,090 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.193:42599
+2018-10-13 02:15:06,149 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.193:42599 无法翻墙，从新获取
+2018-10-13 02:15:06,249 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.89.67:30575
+2018-10-13 02:15:16,306 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.89.67:30575 无法翻墙，从新获取
+2018-10-13 02:15:16,407 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.218.61:40346
+2018-10-13 02:15:26,463 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.218.61:40346 无法翻墙，从新获取
+2018-10-13 02:15:26,567 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.48:54009
+2018-10-13 02:15:36,625 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.48:54009 无法翻墙，从新获取
+2018-10-13 02:15:36,728 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.237.123:53638
+2018-10-13 02:15:46,788 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.237.123:53638 无法翻墙，从新获取
+2018-10-13 02:15:46,890 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.15:36370
+2018-10-13 02:15:56,946 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.15:36370 无法翻墙，从新获取
+2018-10-13 02:15:57,049 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.131:42599
+2018-10-13 02:16:07,105 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.131:42599 无法翻墙，从新获取
+2018-10-13 02:16:07,211 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试69.161.43.167:24576
+2018-10-13 02:16:17,273 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 69.161.43.167:24576 无法翻墙，从新获取
+2018-10-13 02:16:17,382 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:45657
+2018-10-13 02:16:27,439 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:45657 无法翻墙，从新获取
+2018-10-13 02:16:27,545 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:38827
+2018-10-13 02:16:37,604 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:38827 无法翻墙，从新获取
+2018-10-13 02:16:37,710 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.53:36370
+2018-10-13 02:16:47,771 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.53:36370 无法翻墙，从新获取
+2018-10-13 02:16:47,878 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.171.248.130:42599
+2018-10-13 02:16:57,944 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.171.248.130:42599 无法翻墙，从新获取
+2018-10-13 02:16:58,053 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.16:2447
+2018-10-13 02:17:08,121 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.16:2447 无法翻墙，从新获取
+2018-10-13 02:17:08,254 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.12.157.77:11725
+2018-10-13 02:17:18,318 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.12.157.77:11725 无法翻墙，从新获取
+2018-10-13 02:17:18,434 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试204.14.93.197:1080
+2018-10-13 02:17:28,518 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 204.14.93.197:1080 无法翻墙，从新获取
+2018-10-13 02:17:28,634 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.206:6667
+2018-10-13 02:17:38,696 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 103.216.82.206:6667 无法翻墙，从新获取
+2018-10-13 02:17:38,808 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试37.59.56.88:63511
+2018-10-13 02:17:48,871 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 37.59.56.88:63511 无法翻墙，从新获取
+2018-10-13 02:17:48,982 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.196.5:61311
+2018-10-13 02:17:59,044 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.196.5:61311 无法翻墙，从新获取
+2018-10-13 02:17:59,155 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:12740
+2018-10-13 02:18:09,217 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:12740 无法翻墙，从新获取
+2018-10-13 02:18:09,332 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.53:2447
+2018-10-13 02:18:19,396 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.53:2447 无法翻墙，从新获取
+2018-10-13 02:18:19,510 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.182.200:9992
+2018-10-13 02:18:29,583 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.182.200:9992 无法翻墙，从新获取
+2018-10-13 02:18:29,705 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.207.71:26187
+2018-10-13 02:18:39,770 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.207.71:26187 无法翻墙，从新获取
+2018-10-13 02:18:39,888 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:10994
+2018-10-13 02:18:49,966 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.250.198:10994 无法翻墙，从新获取
+2018-10-13 02:18:50,226 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.13.46.230:1080
+2018-10-13 02:19:00,288 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.13.46.230:1080 无法翻墙，从新获取
+2018-10-13 02:19:00,401 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试183.6.120.25:1080
+2018-10-13 02:19:10,467 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 183.6.120.25:1080 无法翻墙，从新获取
+2018-10-13 02:19:10,586 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.196.5:3865
+2018-10-13 02:19:20,651 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.196.5:3865 无法翻墙，从新获取
+2018-10-13 02:19:20,767 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.74:39124
+2018-10-13 02:19:30,833 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.74:39124 无法翻墙，从新获取
+2018-10-13 02:19:30,953 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试204.0.52.231:63719
+2018-10-13 02:19:41,028 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 204.0.52.231:63719 无法翻墙，从新获取
+2018-10-13 02:19:41,146 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.76.214.72:1080
+2018-10-13 02:19:51,212 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.76.214.72:1080 无法翻墙，从新获取
+2018-10-13 02:19:51,331 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试208.95.22.244:4352
+2018-10-13 02:20:01,398 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 208.95.22.244:4352 无法翻墙，从新获取
+2018-10-13 02:20:01,518 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.138.184:64876
+2018-10-13 02:20:11,588 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.138.184:64876 无法翻墙，从新获取
+2018-10-13 02:20:11,722 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试109.74.1.131:10080
+2018-10-13 02:20:21,790 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 109.74.1.131:10080 无法翻墙，从新获取
+2018-10-13 02:20:21,909 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.62.219.8:5080
+2018-10-13 02:20:31,979 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.62.219.8:5080 无法翻墙，从新获取
+2018-10-13 02:20:32,105 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.52:12650
+2018-10-13 02:20:42,179 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.52:12650 无法翻墙，从新获取
+2018-10-13 02:20:42,314 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试109.173.44.91:1080
+2018-10-13 02:20:52,381 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 109.173.44.91:1080 无法翻墙，从新获取
+2018-10-13 02:20:52,502 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试52.15.62.13:13034
+2018-10-13 02:21:02,571 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 52.15.62.13:13034 无法翻墙，从新获取
+2018-10-13 02:21:02,693 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试5.134.124.206:10080
+2018-10-13 02:21:12,770 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 5.134.124.206:10080 无法翻墙，从新获取
+2018-10-13 02:21:12,902 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.151.75.2:39880
+2018-10-13 02:21:22,986 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.151.75.2:39880 无法翻墙，从新获取
+2018-10-13 02:21:23,111 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试24.143.237.186:31232
+2018-10-13 02:21:33,182 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 24.143.237.186:31232 无法翻墙，从新获取
+2018-10-13 02:21:33,311 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:50538
+2018-10-13 02:21:43,384 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.227.5:50538 无法翻墙，从新获取
+2018-10-13 02:21:43,542 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试66.17.113.211:38105
+2018-10-13 02:21:53,614 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 66.17.113.211:38105 无法翻墙，从新获取
+2018-10-13 02:21:53,741 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.80:42599
+2018-10-13 02:22:03,819 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.80:42599 无法翻墙，从新获取
+2018-10-13 02:22:03,944 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:51137
+2018-10-13 02:22:14,015 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.227.5:51137 无法翻墙，从新获取
+2018-10-13 02:22:14,146 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试179.40.67.52:39880
+2018-10-13 02:22:24,232 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 179.40.67.52:39880 无法翻墙，从新获取
+2018-10-13 02:22:24,358 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.194.245:35759
+2018-10-13 02:22:34,431 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.194.245:35759 无法翻墙，从新获取
+2018-10-13 02:22:34,559 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.123:42599
+2018-10-13 02:22:44,632 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.123:42599 无法翻墙，从新获取
+2018-10-13 02:22:44,762 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.196:42599
+2018-10-13 02:22:54,836 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.196:42599 无法翻墙，从新获取
+2018-10-13 02:22:54,963 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.92:42599
+2018-10-13 02:23:05,034 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.92:42599 无法翻墙，从新获取
+2018-10-13 02:23:05,163 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试78.251.218.80:9050
+2018-10-13 02:23:15,236 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 78.251.218.80:9050 无法翻墙，从新获取
+2018-10-13 02:23:15,369 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试118.139.165.55:51602
+2018-10-13 02:23:25,443 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 118.139.165.55:51602 无法翻墙，从新获取
+2018-10-13 02:23:25,572 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试222.165.225.245:18959
+2018-10-13 02:23:35,646 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 222.165.225.245:18959 无法翻墙，从新获取
+2018-10-13 02:23:35,804 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.19.140:10080
+2018-10-13 02:23:45,878 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.19.140:10080 无法翻墙，从新获取
+2018-10-13 02:23:46,038 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.44:36370
+2018-10-13 02:23:56,117 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.44:36370 无法翻墙，从新获取
+2018-10-13 02:23:56,261 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.227.116.131:1080
+2018-10-13 02:24:06,336 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.227.116.131:1080 无法翻墙，从新获取
+2018-10-13 02:24:06,468 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.216:42599
+2018-10-13 02:24:16,544 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.216:42599 无法翻墙，从新获取
+2018-10-13 02:24:16,680 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.136.232:2064
+2018-10-13 02:24:26,758 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.136.232:2064 无法翻墙，从新获取
+2018-10-13 02:24:26,897 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试101.6.65.41:1080
+2018-10-13 02:24:36,974 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 101.6.65.41:1080 无法翻墙，从新获取
+2018-10-13 02:24:37,110 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.180.124:59326
+2018-10-13 02:24:47,191 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.180.124:59326 无法翻墙，从新获取
+2018-10-13 02:24:47,336 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.227.69.220:3263
+2018-10-13 02:24:57,429 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.227.69.220:3263 无法翻墙，从新获取
+2018-10-13 02:24:57,572 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.183:42599
+2018-10-13 02:25:07,661 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.183:42599 无法翻墙，从新获取
+2018-10-13 02:25:07,809 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.46:19142
+2018-10-13 02:25:17,890 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.46:19142 无法翻墙，从新获取
+2018-10-13 02:25:18,032 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试5.230.148.207:8082
+2018-10-13 02:25:28,113 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 5.230.148.207:8082 无法翻墙，从新获取
+2018-10-13 02:25:28,259 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试178.151.75.2:39880
+2018-10-13 02:25:38,339 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 178.151.75.2:39880 无法翻墙，从新获取
+2018-10-13 02:25:38,482 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.232.111:58241
+2018-10-13 02:25:48,562 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.232.111:58241 无法翻墙，从新获取
+2018-10-13 02:25:48,720 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试37.59.8.29:35993
+2018-10-13 02:25:58,816 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 37.59.8.29:35993 无法翻墙，从新获取
+2018-10-13 02:25:58,969 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:15353
+2018-10-13 02:26:09,062 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:15353 无法翻墙，从新获取
+2018-10-13 02:26:09,208 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.183:42599
+2018-10-13 02:26:19,301 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.183:42599 无法翻墙，从新获取
+2018-10-13 02:26:19,446 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.234.164:51351
+2018-10-13 02:26:29,535 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.234.164:51351 无法翻墙，从新获取
+2018-10-13 02:26:29,696 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.7:36370
+2018-10-13 02:26:39,779 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.7:36370 无法翻墙，从新获取
+2018-10-13 02:26:39,928 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试77.120.105.99:52370
+2018-10-13 02:26:50,029 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 77.120.105.99:52370 无法翻墙，从新获取
+2018-10-13 02:26:50,185 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.130.208:32647
+2018-10-13 02:27:00,282 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.130.208:32647 无法翻墙，从新获取
+2018-10-13 02:27:00,426 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试138.197.157.33:1080
+2018-10-13 02:27:10,511 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 138.197.157.33:1080 无法翻墙，从新获取
+2018-10-13 02:27:10,661 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.191:42599
+2018-10-13 02:27:20,744 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.191:42599 无法翻墙，从新获取
+2018-10-13 02:27:20,896 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:38827
+2018-10-13 02:27:30,989 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:38827 无法翻墙，从新获取
+2018-10-13 02:27:31,330 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.13.254:35451
+2018-10-13 02:27:41,436 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.13.254:35451 无法翻墙，从新获取
+2018-10-13 02:27:41,601 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.171.248.130:42599
+2018-10-13 02:27:51,717 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.171.248.130:42599 无法翻墙，从新获取
+2018-10-13 02:27:51,873 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试42.51.206.213:1080
+2018-10-13 02:28:01,979 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 42.51.206.213:1080 无法翻墙，从新获取
+2018-10-13 02:28:02,134 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:12613
+2018-10-13 02:28:12,245 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:12613 无法翻墙，从新获取
+2018-10-13 02:28:12,398 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试200.56.146.107:1080
+2018-10-13 02:28:22,499 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 200.56.146.107:1080 无法翻墙，从新获取
+2018-10-13 02:28:22,656 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.62.35.225:50787
+2018-10-13 02:28:32,742 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.62.35.225:50787 无法翻墙，从新获取
+2018-10-13 02:28:32,899 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试82.146.34.191:10080
+2018-10-13 02:28:43,007 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 82.146.34.191:10080 无法翻墙，从新获取
+2018-10-13 02:28:43,189 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.194.245:35759
+2018-10-13 02:28:53,290 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.194.245:35759 无法翻墙，从新获取
+2018-10-13 02:28:53,467 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.86.56:2447
+2018-10-13 02:29:03,568 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.86.56:2447 无法翻墙，从新获取
+2018-10-13 02:29:03,733 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试138.68.161.167:9876
+2018-10-13 02:29:13,839 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 138.68.161.167:9876 无法翻墙，从新获取
+2018-10-13 02:29:14,001 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.229:42599
+2018-10-13 02:29:24,094 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.229:42599 无法翻墙，从新获取
+2018-10-13 02:29:24,258 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试179.40.67.70:39880
+2018-10-13 02:29:34,348 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 179.40.67.70:39880 无法翻墙，从新获取
+2018-10-13 02:29:34,513 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试167.99.159.51:9050
+2018-10-13 02:29:44,606 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 167.99.159.51:9050 无法翻墙，从新获取
+2018-10-13 02:29:44,771 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试188.227.230.26:10080
+2018-10-13 02:29:54,874 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 188.227.230.26:10080 无法翻墙，从新获取
+2018-10-13 02:29:55,038 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试91.207.255.95:10080
+2018-10-13 02:30:05,133 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 91.207.255.95:10080 无法翻墙，从新获取
+2018-10-13 02:30:05,300 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.230.142:52400
+2018-10-13 02:30:15,391 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.110.230.142:52400 无法翻墙，从新获取
+2018-10-13 02:30:15,562 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试61.170.151.217:1080
+2018-10-13 02:30:25,688 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 61.170.151.217:1080 无法翻墙，从新获取
+2018-10-13 02:30:25,859 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:44862
+2018-10-13 02:30:35,955 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:44862 无法翻墙，从新获取
+2018-10-13 02:30:36,124 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:48647
+2018-10-13 02:30:46,219 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:48647 无法翻墙，从新获取
+2018-10-13 02:30:46,390 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:33014
+2018-10-13 02:30:56,488 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:33014 无法翻墙，从新获取
+2018-10-13 02:30:56,661 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试182.254.145.163:1080
+2018-10-13 02:31:06,758 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 182.254.145.163:1080 无法翻墙，从新获取
+2018-10-13 02:31:06,935 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试125.227.69.220:3263
+2018-10-13 02:31:17,052 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 125.227.69.220:3263 无法翻墙，从新获取
+2018-10-13 02:31:17,234 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.105.57.149:53208
+2018-10-13 02:31:27,332 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.105.57.149:53208 无法翻墙，从新获取
+2018-10-13 02:31:27,512 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试109.173.44.91:1080
+2018-10-13 02:31:37,612 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 109.173.44.91:1080 无法翻墙，从新获取
+2018-10-13 02:31:37,789 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.196:42599
+2018-10-13 02:31:47,906 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.196:42599 无法翻墙，从新获取
+2018-10-13 02:31:48,099 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:33814
+2018-10-13 02:31:58,206 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:33814 无法翻墙，从新获取
+2018-10-13 02:31:58,392 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试185.165.173.190:39880
+2018-10-13 02:32:08,496 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 185.165.173.190:39880 无法翻墙，从新获取
+2018-10-13 02:32:08,681 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.233.2:9490
+2018-10-13 02:32:18,797 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.233.2:9490 无法翻墙，从新获取
+2018-10-13 02:32:18,979 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试47.90.37.183:9050
+2018-10-13 02:32:29,082 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 47.90.37.183:9050 无法翻墙，从新获取
+2018-10-13 02:32:29,274 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.7.181:63410
+2018-10-13 02:32:39,374 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.7.181:63410 无法翻墙，从新获取
+2018-10-13 02:32:39,560 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.182.200:49164
+2018-10-13 02:32:49,662 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.182.200:49164 无法翻墙，从新获取
+2018-10-13 02:32:49,845 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:18677
+2018-10-13 02:32:59,954 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:18677 无法翻墙，从新获取
+2018-10-13 02:33:00,136 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.250.198:43982
+2018-10-13 02:33:10,236 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.250.198:43982 无法翻墙，从新获取
+2018-10-13 02:33:10,420 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:13680
+2018-10-13 02:33:20,521 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:13680 无法翻墙，从新获取
+2018-10-13 02:33:20,708 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试91.206.30.205:3129
+2018-10-13 02:33:30,823 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 91.206.30.205:3129 无法翻墙，从新获取
+2018-10-13 02:33:31,047 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.45:54693
+2018-10-13 02:33:41,163 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.45:54693 无法翻墙，从新获取
+2018-10-13 02:33:41,357 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试185.108.76.34:9050
+2018-10-13 02:33:51,480 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 185.108.76.34:9050 无法翻墙，从新获取
+2018-10-13 02:33:51,673 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试150.129.54.102:6667
+2018-10-13 02:34:01,790 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 150.129.54.102:6667 无法翻墙，从新获取
+2018-10-13 02:34:01,989 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.232.12:9906
+2018-10-13 02:34:12,109 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.232.12:9906 无法翻墙，从新获取
+2018-10-13 02:34:12,308 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试219.255.26.114:1080
+2018-10-13 02:34:22,441 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 219.255.26.114:1080 无法翻墙，从新获取
+2018-10-13 02:34:22,633 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.188.100:53562
+2018-10-13 02:34:32,740 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.188.100:53562 无法翻墙，从新获取
+2018-10-13 02:34:32,964 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:16339
+2018-10-13 02:34:43,072 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:16339 无法翻墙，从新获取
+2018-10-13 02:34:43,272 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:4042
+2018-10-13 02:34:53,408 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:4042 无法翻墙，从新获取
+2018-10-13 02:34:53,608 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.216.82.206:6667
+2018-10-13 02:35:03,732 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 103.216.82.206:6667 无法翻墙，从新获取
+2018-10-13 02:35:03,926 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:45398
+2018-10-13 02:35:14,039 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:45398 无法翻墙，从新获取
+2018-10-13 02:35:14,238 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.234.8.131:54321
+2018-10-13 02:35:24,358 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 103.234.8.131:54321 无法翻墙，从新获取
+2018-10-13 02:35:24,558 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:53052
+2018-10-13 02:35:34,735 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:53052 无法翻墙，从新获取
+2018-10-13 02:35:34,974 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试208.97.31.229:53124
+2018-10-13 02:35:45,107 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 208.97.31.229:53124 无法翻墙，从新获取
+2018-10-13 02:35:45,304 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.142.205:26456
+2018-10-13 02:35:55,435 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.142.205:26456 无法翻墙，从新获取
+2018-10-13 02:35:55,640 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.7.181:25920
+2018-10-13 02:36:05,755 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.7.181:25920 无法翻墙，从新获取
+2018-10-13 02:36:05,960 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.13.162:10967
+2018-10-13 02:36:16,073 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.13.162:10967 无法翻墙，从新获取
+2018-10-13 02:36:16,279 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.179.168.233:33966
+2018-10-13 02:36:26,400 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 95.179.168.233:33966 无法翻墙，从新获取
+2018-10-13 02:36:26,605 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试31.31.73.178:10080
+2018-10-13 02:36:36,734 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 31.31.73.178:10080 无法翻墙，从新获取
+2018-10-13 02:36:36,965 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.245.239.223:16938
+2018-10-13 02:36:47,100 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.245.239.223:16938 无法翻墙，从新获取
+2018-10-13 02:36:47,305 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试139.59.53.67:24556
+2018-10-13 02:36:57,423 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 139.59.53.67:24556 无法翻墙，从新获取
+2018-10-13 02:36:57,631 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:52701
+2018-10-13 02:37:07,766 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:52701 无法翻墙，从新获取
+2018-10-13 02:37:07,972 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.167.72:53052
+2018-10-13 02:37:18,102 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.167.72:53052 无法翻墙，从新获取
+2018-10-13 02:37:18,329 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试58.32.254.125:7070
+2018-10-13 02:37:28,456 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 58.32.254.125:7070 无法翻墙，从新获取
+2018-10-13 02:37:28,672 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:46735
+2018-10-13 02:37:38,811 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:46735 无法翻墙，从新获取
+2018-10-13 02:37:39,025 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.250:42599
+2018-10-13 02:37:49,144 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.250:42599 无法翻墙，从新获取
+2018-10-13 02:37:49,354 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试103.250.158.21:6667
+2018-10-13 02:37:59,502 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 103.250.158.21:6667 无法翻墙，从新获取
+2018-10-13 02:37:59,754 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试173.255.223.218:37274
+2018-10-13 02:38:09,883 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 173.255.223.218:37274 无法翻墙，从新获取
+2018-10-13 02:38:10,103 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试70.166.38.80:24822
+2018-10-13 02:38:20,274 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 70.166.38.80:24822 无法翻墙，从新获取
+2018-10-13 02:38:20,497 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试222.180.195.156:4080
+2018-10-13 02:38:30,619 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 222.180.195.156:4080 无法翻墙，从新获取
+2018-10-13 02:38:43,344 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试88.220.122.198:39880
+2018-10-13 02:38:53,479 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 88.220.122.198:39880 无法翻墙，从新获取
+2018-10-13 02:38:53,705 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试212.129.5.151:10080
+2018-10-13 02:39:03,840 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 212.129.5.151:10080 无法翻墙，从新获取
+2018-10-13 02:39:04,068 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.194.150:48249
+2018-10-13 02:39:14,209 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.194.150:48249 无法翻墙，从新获取
+2018-10-13 02:39:14,439 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.132.239:23085
+2018-10-13 02:39:24,565 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.132.239:23085 无法翻墙，从新获取
+2018-10-13 02:39:24,796 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.162:60765
+2018-10-13 02:39:34,925 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.162:60765 无法翻墙，从新获取
+2018-10-13 02:39:35,153 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.97.163:10080
+2018-10-13 02:39:45,285 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.97.163:10080 无法翻墙，从新获取
+2018-10-13 02:39:45,509 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试104.238.191.71:9050
+2018-10-13 02:39:55,643 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 104.238.191.71:9050 无法翻墙，从新获取
+2018-10-13 02:39:55,906 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.4.88.215:9050
+2018-10-13 02:40:06,032 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.4.88.215:9050 无法翻墙，从新获取
+2018-10-13 02:40:06,262 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.100:14439
+2018-10-13 02:40:16,389 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.100:14439 无法翻墙，从新获取
+2018-10-13 02:40:16,619 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.237.123:43330
+2018-10-13 02:40:26,756 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.237.123:43330 无法翻墙，从新获取
+2018-10-13 02:40:26,996 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.88.44:36370
+2018-10-13 02:40:37,123 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.88.44:36370 无法翻墙，从新获取
+2018-10-13 02:40:37,359 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.182.200:16425
+2018-10-13 02:40:47,485 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.182.200:16425 无法翻墙，从新获取
+2018-10-13 02:40:47,735 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.62.31.143:28124
+2018-10-13 02:40:57,869 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.62.31.143:28124 无法翻墙，从新获取
+2018-10-13 02:40:58,125 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:16339
+2018-10-13 02:41:00,311 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:16339 无法翻墙，从新获取
+2018-10-13 02:41:00,560 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.246.8:42599
+2018-10-13 02:41:07,695 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.246.8:42599 无法翻墙，从新获取
+2018-10-13 02:41:07,928 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 05:23:31,268 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 06:24:41,218 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 06:45:26,564 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 07:06:17,941 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 07:57:26,801 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试95.110.227.5:53344
+2018-10-13 07:57:36,923 - Server.Service.user_service - DEBUG - 代理 95.110.227.5:53344 已失效
+2018-10-13 07:57:38,197 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.74:23222
+2018-10-13 07:57:39,952 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.74:23222 无法翻墙，从新获取
+2018-10-13 07:57:40,206 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试47.148.113.244:29423
+2018-10-13 07:57:41,999 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 47.148.113.244:29423 无法翻墙，从新获取
+2018-10-13 07:57:42,032 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试50.63.153.173:46421
+2018-10-13 07:57:52,059 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 50.63.153.173:46421 无法翻墙，从新获取
+2018-10-13 07:57:52,090 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试64.118.87.19:36370
+2018-10-13 07:58:02,108 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 64.118.87.19:36370 无法翻墙，从新获取
+2018-10-13 07:58:02,181 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试94.177.241.183:10080
+2018-10-13 07:58:03,877 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 94.177.241.183:10080 无法翻墙，从新获取
+2018-10-13 07:58:03,909 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试174.70.241.7:24385
+2018-10-13 07:58:14,888 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 174.70.241.7:24385 无法翻墙，从新获取
+2018-10-13 07:58:14,938 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试145.239.165.131:1080
+2018-10-13 07:58:24,991 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 145.239.165.131:1080 无法翻墙，从新获取
+2018-10-13 07:58:25,051 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.249.47:10080
+2018-10-13 08:08:44,356 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.249.47:10080
+2018-10-13 08:09:02,722 - Server.Service.user_service - DEBUG - 代理 192.169.249.47:10080 已失效
+2018-10-13 08:09:02,770 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试162.243.36.198:4276
+2018-10-13 08:09:04,459 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 162.243.36.198:4276 无法翻墙，从新获取
+2018-10-13 08:09:04,501 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试58.32.254.125:7070
+2018-10-13 08:19:18,612 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试58.32.254.125:7070
+2018-10-13 08:19:28,691 - Server.Service.user_service - DEBUG - 代理 58.32.254.125:7070 已失效
+2018-10-13 08:19:28,766 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试132.148.129.183:15353
+2018-10-13 08:19:30,713 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 132.148.129.183:15353 无法翻墙，从新获取
+2018-10-13 08:19:30,743 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试31.148.219.150:1443
+2018-10-13 08:19:40,807 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 31.148.219.150:1443 无法翻墙，从新获取
+2018-10-13 08:19:40,838 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试46.8.29.228:14422
+2018-10-13 08:19:50,855 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 46.8.29.228:14422 无法翻墙，从新获取
+2018-10-13 08:19:50,892 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.171.248.239:42599
+2018-10-13 08:19:52,699 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.171.248.239:42599 无法翻墙，从新获取
+2018-10-13 08:19:52,739 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试192.169.140.74:28699
+2018-10-13 08:19:54,267 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 192.169.140.74:28699 无法翻墙，从新获取
+2018-10-13 08:19:54,298 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试206.223.248.76:42599
+2018-10-13 08:19:55,987 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 206.223.248.76:42599 无法翻墙，从新获取
+2018-10-13 08:19:56,028 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试198.12.151.247:53213
+2018-10-13 08:19:57,552 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 198.12.151.247:53213 无法翻墙，从新获取
+2018-10-13 08:19:57,585 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试78.73.24.36:39880
+2018-10-13 08:20:07,868 - Server.Service.fanqiang_ip_service - DEBUG - 随机ip_port 78.73.24.36:39880 无法翻墙，从新获取
+2018-10-13 08:20:07,903 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试97.74.230.16:7011
+2018-10-13 10:22:06,731 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试97.74.230.16:7011
+2018-10-13 10:42:39,597 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试97.74.230.16:7011
+2018-10-13 15:25:45,997 - Server.Service.fanqiang_ip_service - DEBUG - 开始测试97.74.230.16:7011
+2018-10-15 17:52:25,277 - __main__ - ERROR - dcd930e4-d05f-11e8-af51-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 60, in get_delaytime
+    i = 1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 66, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:52:59,836 - __main__ - ERROR - 06b4fb12-d060-11e8-9a3b-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 60, in get_delaytime
+    i = 1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 66, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:53:50,408 - __main__ - ERROR - 1e204fc2-d060-11e8-b584-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 60, in get_delaytime
+    i = 1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 66, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:53:59,540 - __main__ - ERROR - 3a89b7f4-d060-11e8-a3c0-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 60, in get_delaytime
+    i = 1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 66, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:55:45,639 - __main__ - ERROR - 78f46ad2-d060-11e8-a8d0-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 60, in get_delaytime
+    i = 1/0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 66, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:55:59,407 - __main__ - ERROR - 80ecd292-d060-11e8-86b2-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 62, in get_delaytime
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 68, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
+2018-10-15 17:58:31,237 - __main__ - ERROR - dd8cfb12-d060-11e8-a4e7-005056c00008 - Traceback (most recent call last):
+  File "F:/scribe2/Server/server.py", line 62, in get_delaytime
+    i = 1 / 0
+ZeroDivisionError: division by zero
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "F:\scribe2\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "F:/scribe2/Server/server.py", line 68, in get_delaytime
+    abort(500)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 707, in abort
+    return _aborter(status, *args, **kwargs)
+  File "F:\scribe2\venv\lib\site-packages\werkzeug\exceptions.py", line 687, in __call__
+    raise self.mapping[code](*args, **kwargs)
+werkzeug.exceptions.InternalServerError: 500 Internal Server Error: The server encountered an internal error and was unable to complete your request.  Either the server is overloaded or there is an error in the application.
+
